@@ -4,74 +4,2638 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10110f">
-  <title>SOROFIB — Material, in Motion</title>
-  <meta name="description" content="SOROFIB is a womenswear and material research studio. We begin with fiber to create considered clothing shaped by touch, structure, and everyday life.">
-  <!-- Share preview: update og:url and og:image after publishing. Recommended image: assets/sorofib-social-preview.jpg (1200×630). -->
+  <title>SOROFIB — Material, in Motion | Textile &amp; Womenswear Studio</title>
+  <meta name="description" content="SOROFIB is a material-led womenswear and textile research studio. We bridge fiber science, bio-based polymer exploration, and considered tailoring for the modern woman's wardrobe.">
+  
+  <!-- Open Graph & Social Cards -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="SOROFIB">
   <meta property="og:title" content="SOROFIB — Material, in Motion">
   <meta property="og:description" content="Womenswear and material design. Exploring touch, structure, and lasting value, starting with fiber.">
   <meta property="og:url" content="https://www.sorofib.com/">
-  <meta property="og:image" content="https://www.sorofib.com/assets/sorofib-social-preview.jpg">
+  <meta property="og:image" content="assets/sorofib-social-preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SOROFIB — Material, in Motion">
   <meta name="twitter:description" content="Womenswear and material design. Exploring touch, structure, and lasting value, starting with fiber.">
-  <meta name="twitter:image" content="https://www.sorofib.com/assets/sorofib-social-preview.jpg">
-  <!-- Inline SVG favicon; no separate file required. -->
+  <meta name="twitter:image" content="assets/sorofib-social-preview.jpg">
+  
+  <!-- Inline SVG Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2310110f'/%3E%3Cpath d='M42 18c-4-4-9-5-15-3-8 3-13 11-10 17 3 7 16 6 19 12 2 5-5 9-11 7-4-1-7-3-9-6' fill='none' stroke='%23d5c4a1' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <meta name="color-scheme" content="dark">
+  
   <style>
-    :root{--ink:#10110f;--paper:#e9e5dc;--muted:#a6a49b;--line:rgba(233,229,220,.17);--accent:#c8b48c;--serif:Georgia,'Times New Roman',serif;--sans:Arial,'Helvetica Neue',sans-serif;--max:1440px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--sans);font-size:14px;line-height:1.65;letter-spacing:.025em}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(calc(100% - 9vw),var(--max));margin:auto}.eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.035em}.muted{color:var(--muted)}.rule{border:0;border-top:1px solid var(--line);margin:0}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:absolute;inset:0 0 auto;z-index:10;padding:0 4.5vw;background:linear-gradient(#10110f99,transparent)}.brand{font-family:var(--serif);font-size:22px;letter-spacing:.2em}.brand small{display:block;font:8px var(--sans);letter-spacing:.31em;color:var(--muted);margin-top:-2px}.nav{display:flex;align-items:center;gap:30px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}.nav a{opacity:.78;transition:opacity .2s}.nav a:hover,.nav a.active{opacity:1;color:var(--accent)}.nav .contact-link{border:1px solid #d8d1c080;padding:10px 14px}.menu-btn{display:none;background:none;border:0;color:var(--paper);font-size:22px}
-    .hero{min-height:760px;height:min(100vh,980px);position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#242522}.hero-media{position:absolute;inset:0;background:linear-gradient(90deg,#10110f99 0%,#10110f50 55%,#10110f22),linear-gradient(0deg,#10110f 0%,transparent 40%),url('assets/hero-womenswear-editorial.jpg') center 38%/cover no-repeat,#383a35}.hero-media:after{display:none}.hero-content{position:relative;padding:0 0 10vh;max-width:760px}.hero h1{font-size:clamp(54px,9.6vw,142px);line-height:.88;margin:22px 0 28px}.hero p{max-width:440px;color:#d0cec6;font-size:14px}.hero-actions{display:flex;gap:24px;align-items:center;margin-top:36px}.button{display:inline-flex;gap:18px;align-items:center;border:1px solid #ded6c477;padding:13px 18px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;transition:.25s}.button:hover{background:var(--paper);color:var(--ink)}.text-link{font-size:10px;letter-spacing:.17em;text-transform:uppercase;color:var(--accent)}.scroll-note{position:absolute;right:4.5vw;bottom:11vh;writing-mode:vertical-rl;color:#d5d1c6a0;font-size:9px;letter-spacing:.2em}
-    section{padding:120px 0}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:55px}.section-head h2{font-size:clamp(38px,5.5vw,76px);line-height:.98;margin:14px 0 0}.section-head p{max-width:340px;color:var(--muted);margin:0}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:12vw;align-items:start}.intro-grid .lead{font:clamp(24px,3vw,42px)/1.3 var(--serif);max-width:580px}.intro-grid .body-copy{color:var(--muted);max-width:430px;padding-top:12px}.intro-grid .body-copy p{margin:0 0 18px}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:76px;border-top:1px solid var(--line)}.principle{padding:24px 28px 0 0}.principle+ .principle{border-left:1px solid var(--line);padding-left:28px}.principle b{display:block;color:var(--accent);font:32px var(--serif);margin-bottom:18px}.principle h3{font:20px var(--serif);font-weight:400;margin:0 0 8px}.principle p{color:var(--muted);max-width:320px;margin:0;font-size:12px}
-    .material{background:#171815}.material-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}.material-visual{min-height:520px;height:100%;position:relative;background:#242622;overflow:hidden}.material-visual img{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0}.material-visual:before,.material-visual:after{content:'';position:absolute;border:1px solid #d7c8a22b;border-radius:50%;width:70%;aspect-ratio:1;left:15%;top:15%;transform:rotate(-24deg) scaleY(.48);z-index:2;pointer-events:none}.material-visual:after{transform:rotate(32deg) scaleY(.65);width:82%;left:9%;top:9%}.material-visual .asset-note{display:none}.material-copy h2{font-size:clamp(42px,6vw,82px);line-height:.94;margin:16px 0 24px}.material-copy p{color:var(--muted);max-width:490px}.material-list{margin:34px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}.material-list li{border-bottom:1px solid var(--line);padding:18px 0;transition:background-color .2s}.material-list .list-head{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;color:var(--paper);letter-spacing:.02em}.material-list .list-head strong{font-weight:500}.material-list .list-head span{color:var(--accent);font-size:11px;letter-spacing:.12em}.material-list p{margin:6px 0 0;font-size:11.5px;color:var(--muted);line-height:1.55;max-width:480px}
-    .collection-cards{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.collection-card{position:relative;min-height:570px;overflow:hidden;background:#292b27}.collection-card:nth-child(2){margin-top:90px;min-height:480px}.collection-photo{position:absolute;inset:0;background:linear-gradient(0deg,#11120fdf,transparent 70%),url('assets/collection-look-01.jpg') center/cover no-repeat,#40423d}.collection-card:nth-child(2) .collection-photo{background-image:linear-gradient(0deg,#11120fdf,transparent 70%),url('assets/collection-look-02.jpg')}.collection-meta{position:absolute;inset:auto 30px 28px}.collection-meta h3{font:clamp(34px,5vw,64px)/.95 var(--serif);margin:10px 0}.collection-meta p{max-width:390px;color:#cfcdc5;font-size:12px}.season-banner{margin-top:55px;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:center}.season-banner strong{font:32px var(--serif);font-weight:400}
-    .season-page{display:none;min-height:100vh;padding-top:110px}.season-page.show{display:block}.home-view.hide{display:none}.season-hero{min-height:70vh;display:flex;align-items:flex-end;position:relative;padding:0 0 70px;background:linear-gradient(0deg,#10110f 0%,#10110f55 45%,#10110f20),url('assets/season-hero.jpg') center/cover no-repeat,#343630}.season-hero h1{font-size:clamp(60px,11vw,150px);line-height:.84;margin:16px 0}.season-hero p{max-width:440px;color:#d0cec6}.season-detail{display:grid;grid-template-columns:1fr 1fr;gap:10vw;padding:90px 0}.season-detail h2{font:clamp(34px,5vw,64px)/1.03 var(--serif);margin:0}.season-detail p{color:var(--muted);margin-top:0}.season-look-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.look-tile{aspect-ratio:.76;background:linear-gradient(0deg,#10110f6b,transparent),url('assets/season-look-01.jpg') center/cover,#32342f;position:relative}.look-tile:nth-child(2){background-image:linear-gradient(0deg,#10110f6b,transparent),url('assets/season-look-02.jpg')}.look-tile:nth-child(3){background-image:linear-gradient(0deg,#10110f6b,transparent),url('assets/season-look-03.jpg')}.look-tile span{position:absolute;bottom:14px;left:16px;font-size:10px;letter-spacing:.16em;color:#fff}
-    .team{background:#171815}.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:34px 18px}.person{display:grid;grid-template-columns:minmax(160px, .9fr) 1fr;gap:24px;align-items:center}.portrait{aspect-ratio:1/1;border-radius:50%;background:radial-gradient(circle at 50% 35%,#77786f,#393a35 58%,#242521);position:relative;overflow:hidden}.portrait img{width:100%;height:100%;object-fit:cover;display:block}.portrait:empty:after{content:attr(data-file);position:absolute;left:50%;bottom:18px;transform:translateX(-50%);white-space:nowrap;font-size:8px;color:#eee9da9c;letter-spacing:.1em}.person h3{font:clamp(26px,3vw,40px)/.98 var(--serif);margin:10px 0}.person .role{font-size:9px;letter-spacing:.15em;color:var(--accent);text-transform:uppercase}.person p{font-size:12px;color:var(--muted);max-width:330px}.person.mia{grid-column:1/-1;grid-template-columns:minmax(220px,.7fr) 1.3fr;padding-bottom:34px;border-bottom:1px solid var(--line);margin-bottom:8px}.person.mia .portrait{max-width:380px}.bio-link{display:inline-block;margin-top:10px;color:var(--accent);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
-    .research-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:10vw}.research-grid h2{font-size:clamp(38px,5vw,72px);line-height:.96;margin:12px 0}.research-grid p{max-width:420px;color:var(--muted)}.research-steps{border-top:1px solid var(--line)}.research-step{display:grid;grid-template-columns:50px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}.research-step b{font:22px var(--serif);color:var(--accent);font-weight:400}.research-step h3{font:21px var(--serif);font-weight:400;margin:0 0 5px}.research-step p{font-size:12px;margin:0;max-width:560px}
-    .contact{background:#c9b894;color:#151612}.contact .eyebrow{color:#4c493f}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw}.contact h2{font:clamp(52px,8vw,110px)/.85 var(--serif);margin:16px 0}.contact p{max-width:420px;color:#48473f}.contact a{border-bottom:1px solid #15161255}.contact-details{align-self:end;display:grid;grid-template-columns:1fr 1fr;gap:26px}.contact-details h3{font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin:0 0 10px}.contact-details p{font-size:12px;margin:0}.footer{padding:25px 4.5vw;display:flex;justify-content:space-between;gap:20px;align-items:center;color:#85857d;font-size:9px;letter-spacing:.1em}.footer-links{display:flex;gap:18px}.compliance{padding:24px 0 50px;color:#7f8078;font-size:10px}.compliance h3{font-size:10px;color:#aaa99f;letter-spacing:.15em;text-transform:uppercase}.compliance p{max-width:1050px}.back-top{position:fixed;right:22px;bottom:22px;border:1px solid #ffffff35;background:#10110fcc;color:var(--paper);padding:10px 13px;font-size:10px;z-index:5}
-    @media(max-width:800px){.wrap{width:calc(100% - 40px)}.topbar{height:68px;padding:0 20px}.menu-btn{display:block}.nav{display:none;position:absolute;left:0;right:0;top:68px;padding:20px;background:#10110f;flex-direction:column;align-items:flex-start;gap:20px;border-bottom:1px solid var(--line)}.nav.open{display:flex}.hero{height:88svh;min-height:620px}.hero-content{padding-bottom:12vh}.hero h1{font-size:clamp(58px,16vw,100px)}.hero p{max-width:340px}.scroll-note{display:none}section{padding:82px 0}.section-head{display:block;margin-bottom:36px}.section-head p{margin-top:22px}.intro-grid,.material-grid,.research-grid,.contact-grid,.season-detail{grid-template-columns:1fr;gap:32px}.principles{grid-template-columns:1fr;margin-top:42px}.principle,.principle+.principle{border-left:0;border-top:1px solid var(--line);padding:20px 0}.principle b{font-size:25px;margin-bottom:6px}.material-visual{min-height:360px;order:2}.collection-cards{grid-template-columns:1fr;gap:14px}.collection-card,.collection-card:nth-child(2){min-height:460px;margin-top:0}.season-banner{align-items:flex-start;flex-direction:column}.season-banner strong{font-size:28px}.team-grid{grid-template-columns:1fr;gap:32px}.person,.person.mia{grid-column:auto;grid-template-columns:minmax(120px,.72fr) 1fr;gap:17px}.person.mia .portrait{max-width:none}.person p{font-size:11px}.person h3{font-size:30px}.season-look-grid{grid-template-columns:1fr 1fr}.look-tile:last-child{display:none}.contact-details{grid-template-columns:1fr 1fr}.footer{padding:22px 20px;flex-wrap:wrap}.season-hero{min-height:65vh}.season-detail{padding:60px 0}}
-    @media(max-width:430px){.person,.person.mia{grid-template-columns:115px 1fr;gap:14px}.person h3{font-size:26px}.person p{font-size:10px;line-height:1.5}.person .role{font-size:8px}.hero-actions{gap:14px;flex-wrap:wrap}.contact-details{gap:18px}.collection-card,.collection-card:nth-child(2){min-height:400px}}
+    :root {
+      --ink: #10110f;
+      --paper: #e9e5dc;
+      --muted: #a6a49b;
+      --muted-dark: #6e6d66;
+      --line: rgba(233, 229, 220, 0.16);
+      --line-hover: rgba(233, 229, 220, 0.32);
+      --accent: #c8b48c;
+      --accent-soft: rgba(200, 180, 140, 0.15);
+      --card-bg: #161714;
+      --card-alt: #1c1d19;
+      --serif: Georgia, 'Times New Roman', serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --max: 1440px;
+    }
+    
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--ink);
+      color: var(--paper);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.65;
+      letter-spacing: 0.025em;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; }
+    img { max-width: 100%; height: auto; display: block; }
+    
+    .wrap {
+      width: min(calc(100% - 9vw), var(--max));
+      margin: auto;
+    }
+    .eyebrow {
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .serif {
+      font-family: var(--serif);
+      font-weight: 400;
+      letter-spacing: -0.035em;
+    }
+    .muted { color: var(--muted); }
+    .rule { border: 0; border-top: 1px solid var(--line); margin: 0; }
+    
+    /* Topbar Navigation */
+    .topbar {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 100;
+      padding: 0 4.5vw;
+      background: linear-gradient(to bottom, rgba(16, 17, 15, 0.95), rgba(16, 17, 15, 0.6) 80%, transparent);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .brand {
+      font-family: var(--serif);
+      font-size: 22px;
+      letter-spacing: 0.2em;
+      font-weight: 400;
+    }
+    .brand small {
+      display: block;
+      font: 8px var(--sans);
+      letter-spacing: 0.31em;
+      color: var(--muted);
+      margin-top: -2px;
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+    .nav a {
+      opacity: 0.78;
+      transition: opacity 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    .nav a:hover, .nav a.active {
+      opacity: 1;
+      color: var(--accent);
+    }
+    .nav .contact-link {
+      border: 1px solid rgba(216, 209, 192, 0.5);
+      padding: 9px 14px;
+      transition: all 0.25s;
+    }
+    .nav .contact-link:hover {
+      background: var(--paper);
+      color: var(--ink);
+    }
+    .menu-btn {
+      display: none;
+      background: none;
+      border: 0;
+      color: var(--paper);
+      font-size: 24px;
+      padding: 8px;
+    }
+    
+    /* Hero Section */
+    .hero {
+      min-height: 760px;
+      height: min(100vh, 980px);
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: #242522;
+    }
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background: #242522;
+    }
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 38%;
+      display: block;
+      z-index: 1;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(16, 17, 15, 0.6) 0%, rgba(16, 17, 15, 0.31) 55%, rgba(16, 17, 15, 0.13)),
+                  linear-gradient(0deg, #10110f 0%, transparent 40%),
+                  linear-gradient(180deg, rgba(16, 17, 15, 0.65) 0%, transparent 20%);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      padding: 0 0 10vh;
+      max-width: 760px;
+      z-index: 3;
+    }
+    .hero h1 {
+      font-size: clamp(54px, 9.6vw, 142px);
+      line-height: 0.88;
+      margin: 22px 0 28px;
+    }
+    .hero p {
+      max-width: 440px;
+      color: #d0cec6;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      margin-top: 36px;
+    }
+    .button {
+      display: inline-flex;
+      gap: 16px;
+      align-items: center;
+      border: 1px solid rgba(222, 214, 196, 0.48);
+      padding: 13px 22px;
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      transition: 0.25s;
+      background: transparent;
+      color: var(--paper);
+    }
+    .button:hover {
+      background: var(--paper);
+      color: var(--ink);
+      border-color: var(--paper);
+    }
+    .text-link {
+      font-size: 10px;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s, opacity 0.2s;
+    }
+    .text-link:hover { opacity: 0.8; }
+    .scroll-note {
+      position: absolute;
+      right: 4.5vw;
+      bottom: 11vh;
+      writing-mode: vertical-rl;
+      color: rgba(213, 209, 198, 0.65);
+      font-size: 9px;
+      letter-spacing: 0.2em;
+    }
+    
+    /* Common Section Styles */
+    section { padding: 120px 0; position: relative; }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+      margin-bottom: 55px;
+    }
+    .section-head h2 {
+      font-size: clamp(38px, 5.5vw, 76px);
+      line-height: 0.98;
+      margin: 14px 0 0;
+    }
+    .section-head p {
+      max-width: 380px;
+      color: var(--muted);
+      margin: 0;
+      font-size: 13.5px;
+    }
+    
+    /* Section 01: About */
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10vw;
+      align-items: start;
+    }
+    .intro-grid .lead {
+      font: clamp(24px, 3vw, 42px)/1.3 var(--serif);
+      max-width: 580px;
+      color: var(--paper);
+    }
+    .intro-grid .body-copy {
+      color: var(--muted);
+      max-width: 480px;
+      padding-top: 12px;
+    }
+    .intro-grid .body-copy p { margin: 0 0 18px; font-size: 13.5px; }
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 76px;
+      border-top: 1px solid var(--line);
+    }
+    .principle { padding: 28px 32px 0 0; }
+    .principle + .principle {
+      border-left: 1px solid var(--line);
+      padding-left: 32px;
+    }
+    .principle b {
+      display: block;
+      color: var(--accent);
+      font: 32px var(--serif);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+    .principle h3 {
+      font: 20px var(--serif);
+      font-weight: 400;
+      margin: 0 0 8px;
+    }
+    .principle p {
+      color: var(--muted);
+      max-width: 340px;
+      margin: 0;
+      font-size: 12.5px;
+      line-height: 1.6;
+    }
+    
+    /* Section 02: Our Story */
+    .story-section {
+      background: #141512;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .story-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 8vw;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+    .story-text h2 {
+      font-size: clamp(38px, 5.2vw, 70px);
+      line-height: 0.98;
+      margin: 16px 0 24px;
+    }
+    .story-text .story-lead {
+      font: 18px/1.65 var(--serif);
+      color: #ded9cd;
+      margin-bottom: 22px;
+    }
+    .story-text p {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .story-gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .story-photo-box {
+      position: relative;
+      overflow: hidden;
+      background: var(--card-bg);
+      aspect-ratio: 0.8;
+      border: 1px solid var(--line);
+    }
+    .story-photo-box:nth-child(2) {
+      margin-top: 40px;
+    }
+    .story-photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .story-photo-box:hover img {
+      transform: scale(1.04);
+    }
+    .story-photo-caption {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      right: 14px;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #ded8c6;
+      background: rgba(16, 17, 15, 0.75);
+      padding: 6px 10px;
+      backdrop-filter: blur(4px);
+    }
+    .story-pillars {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      padding-top: 60px;
+      border-top: 1px solid var(--line);
+    }
+    .story-pillar { padding-right: 18px; }
+    .story-pillar span {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .story-pillar h4 {
+      font: 18px var(--serif);
+      font-weight: 400;
+      margin: 0 0 10px;
+      color: var(--paper);
+    }
+    .story-pillar p {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+      margin: 0;
+    }
+    
+    /* Section 03: Materials */
+    .material { background: #171815; }
+    .material-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8vw;
+      align-items: center;
+    }
+    .material-visual {
+      min-height: 560px;
+      height: 100%;
+      position: relative;
+      background: #242622;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .material-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      position: absolute;
+      inset: 0;
+      transition: transform 0.6s ease;
+    }
+    .material-visual:hover img {
+      transform: scale(1.03);
+    }
+    .material-visual:before, .material-visual:after {
+      content: '';
+      position: absolute;
+      border: 1px solid rgba(215, 200, 162, 0.22);
+      border-radius: 50%;
+      width: 70%;
+      aspect-ratio: 1;
+      left: 15%;
+      top: 15%;
+      transform: rotate(-24deg) scaleY(0.48);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .material-visual:after {
+      transform: rotate(32deg) scaleY(0.65);
+      width: 82%;
+      left: 9%;
+      top: 9%;
+    }
+    .material-copy h2 {
+      font-size: clamp(40px, 5.8vw, 78px);
+      line-height: 0.94;
+      margin: 16px 0 24px;
+    }
+    .material-copy p {
+      color: var(--muted);
+      max-width: 500px;
+      font-size: 13.5px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .material-list {
+      margin: 36px 0 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+    .material-list li {
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+      transition: background-color 0.2s;
+    }
+    .material-list .list-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 13px;
+      color: var(--paper);
+      letter-spacing: 0.02em;
+    }
+    .material-list .list-head strong { font-weight: 500; }
+    .material-list .list-head span {
+      color: var(--accent);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      font-family: var(--serif);
+    }
+    .material-list p {
+      margin: 6px 0 0;
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.55;
+      max-width: 480px;
+    }
+    
+    /* Section 04: Sorona® Material Platforms & Innovation */
+    .innovations-section {
+      background: #11120f;
+      border-top: 1px solid var(--line);
+    }
+    .innovations-note {
+      max-width: 660px;
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-bottom: 40px;
+      line-height: 1.65;
+      border-left: 2px solid var(--accent);
+      padding-left: 18px;
+    }
+    .innovations-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .innovation-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      padding: 34px 28px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.3s, transform 0.3s, background 0.3s;
+    }
+    .innovation-card:hover {
+      border-color: var(--line-hover);
+      background: var(--card-alt);
+      transform: translateY(-3px);
+    }
+    .innovation-tag {
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: block;
+    }
+    .innovation-card h3 {
+      font: 26px var(--serif);
+      font-weight: 400;
+      margin: 0 0 12px;
+      color: var(--paper);
+    }
+    .innovation-card p {
+      color: var(--muted);
+      font-size: 12.5px;
+      line-height: 1.65;
+      margin: 0 0 20px;
+    }
+    .innovation-meta {
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      margin-top: auto;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      color: #cfcdc5;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+    }
+    .innovation-meta span:last-child { color: var(--accent); }
+    
+    /* Section 05: Interactive Atelier Studies (Sketches to Output Hover Reveal) */
+    .atelier-section {
+      background: #0d0e0c;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .atelier-header-desc {
+      max-width: 520px;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+    .atelier-interaction-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200, 180, 140, 0.1);
+      border: 1px solid rgba(200, 180, 140, 0.3);
+      padding: 6px 14px;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-top: 18px;
+    }
+    .atelier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .atelier-card {
+      position: relative;
+      aspect-ratio: 0.82;
+      overflow: hidden;
+      background: #141512;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      transition: border-color 0.35s, box-shadow 0.35s;
+    }
+    .atelier-card:hover, .atelier-card.revealed {
+      border-color: var(--accent);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    }
+    .atelier-media-wrap {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .atelier-card .sketch-layer,
+    .atelier-card .output-layer {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.55s cubic-bezier(0.4, 0, 0.2, 1), transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .atelier-card .sketch-layer {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .atelier-card .output-layer {
+      opacity: 0;
+      transform: scale(1.06);
+    }
+    /* Hover or revealed state */
+    .atelier-card:hover .sketch-layer,
+    .atelier-card.revealed .sketch-layer {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    .atelier-card:hover .output-layer,
+    .atelier-card.revealed .output-layer {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .atelier-badge {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(16, 17, 15, 0.88);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 5px 11px;
+      font-size: 9px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      z-index: 10;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .atelier-hover-indicator {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      font-size: 8px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #cfcdc5;
+      background: rgba(16, 17, 15, 0.72);
+      padding: 5px 10px;
+      backdrop-filter: blur(4px);
+      z-index: 10;
+      transition: all 0.3s;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .atelier-card:hover .atelier-hover-indicator,
+    .atelier-card.revealed .atelier-hover-indicator {
+      background: var(--accent);
+      color: var(--ink);
+      border-color: var(--accent);
+    }
+    .atelier-meta {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 24px 20px 18px;
+      background: linear-gradient(0deg, rgba(16, 17, 15, 0.96) 0%, rgba(16, 17, 15, 0.65) 60%, transparent);
+      z-index: 10;
+      pointer-events: none;
+    }
+    .atelier-meta h4 {
+      font: 20px var(--serif);
+      font-weight: 400;
+      margin: 0 0 4px;
+      color: var(--paper);
+    }
+    .atelier-meta .phase {
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+    }
+    
+    /* Section 06: Collections */
+    .collection-cards {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+    }
+    .collection-card {
+      position: relative;
+      min-height: 600px;
+      overflow: hidden;
+      background: #292b27;
+      border: 1px solid var(--line);
+    }
+    .collection-card:nth-child(2) {
+      margin-top: 90px;
+      min-height: 510px;
+    }
+    .collection-photo {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(17, 18, 15, 0.92) 0%, rgba(17, 18, 15, 0.2) 65%, transparent),
+                  url('assets/collection-look-01.jpg') center/cover no-repeat,
+                  #40423d;
+      transition: transform 0.6s ease;
+    }
+    .collection-card:nth-child(2) .collection-photo {
+      background-image: linear-gradient(0deg, rgba(17, 18, 15, 0.92) 0%, rgba(17, 18, 15, 0.2) 65%, transparent),
+                        url('assets/collection-look-02.jpg');
+    }
+    .collection-card:hover .collection-photo {
+      transform: scale(1.03);
+    }
+    .collection-meta {
+      position: absolute;
+      inset: auto 34px 32px;
+      z-index: 2;
+    }
+    .collection-meta h3 {
+      font: clamp(34px, 5vw, 64px)/0.95 var(--serif);
+      margin: 10px 0;
+    }
+    .collection-meta p {
+      max-width: 400px;
+      color: #cfcdc5;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .season-banner {
+      margin-top: 70px;
+      padding: 32px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+    .season-banner strong {
+      font: 32px var(--serif);
+      font-weight: 400;
+      color: var(--paper);
+    }
+    
+    /* Section 07: Archive Lookbook Gallery (from Client Screenshot) */
+    .archive-lookbook-section {
+      background: #11120f;
+      border-top: 1px solid var(--line);
+    }
+    .archive-editorial-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr 0.85fr;
+      gap: 24px;
+      margin-top: 36px;
+      align-items: stretch;
+    }
+    .archive-editorial-card {
+      position: relative;
+      overflow: hidden;
+      background: #181916;
+      border: 1px solid var(--line);
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .archive-editorial-card.tall {
+      min-height: 480px;
+    }
+    .archive-editorial-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.65s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .archive-editorial-card:hover img {
+      transform: scale(1.05);
+    }
+    .archive-tag-strip {
+      position: relative;
+      z-index: 3;
+      margin: 0 16px 20px;
+      background: rgba(16, 17, 15, 0.88);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 9px 14px;
+      font-size: 9.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #ded8c6;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .archive-stack-col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .archive-cta-wrap {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .archive-lookbook-btn {
+      display: inline-flex;
+      gap: 14px;
+      align-items: center;
+      border: 1px solid rgba(233, 229, 220, 0.35);
+      padding: 14px 30px;
+      font-size: 10.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--paper);
+      background: transparent;
+      transition: all 0.25s;
+    }
+    .archive-lookbook-btn:hover {
+      background: var(--paper);
+      color: var(--ink);
+      border-color: var(--paper);
+    }
+
+    /* Permanent Wardrobe Grid */
+    .permanent-wardrobe-wrap {
+      margin-top: 80px;
+      padding-top: 70px;
+      border-top: 1px solid var(--line);
+    }
+    .archive-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .archive-item {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .archive-item:hover {
+      border-color: var(--line-hover);
+      transform: translateY(-4px);
+    }
+    .archive-img-wrap {
+      position: relative;
+      aspect-ratio: 0.82;
+      overflow: hidden;
+      background: #242521;
+    }
+    .archive-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    .archive-item:hover .archive-img-wrap img {
+      transform: scale(1.05);
+    }
+    .archive-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(16, 17, 15, 0.82);
+      backdrop-filter: blur(4px);
+      padding: 4px 8px;
+      font-size: 8px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .archive-info {
+      padding: 20px 18px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .archive-cat {
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    .archive-info h3 {
+      font: 18px var(--serif);
+      font-weight: 400;
+      margin: 0 0 8px;
+      color: var(--paper);
+    }
+    .archive-info p {
+      color: var(--muted);
+      font-size: 11.5px;
+      line-height: 1.55;
+      margin: 0 0 14px;
+    }
+    .archive-spec {
+      margin-top: auto;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 9.5px;
+      color: #b5b3aa;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    
+    /* Section 08: Dedicated Season Page (SPA view) */
+    .season-page {
+      display: none;
+      min-height: 100vh;
+      padding-top: 110px;
+    }
+    .season-page.show { display: block; }
+    .home-view.hide { display: none; }
+    
+    .season-hero {
+      min-height: 72vh;
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      padding: 0 0 80px;
+      background: linear-gradient(0deg, var(--ink) 0%, rgba(16, 17, 15, 0.55) 50%, rgba(16, 17, 15, 0.2)),
+                  url('assets/season-hero.jpg') center/cover no-repeat,
+                  #343630;
+    }
+    .season-hero h1 {
+      font-size: clamp(60px, 11vw, 150px);
+      line-height: 0.84;
+      margin: 16px 0;
+    }
+    .season-hero p {
+      max-width: 480px;
+      color: #d0cec6;
+      font-size: 15px;
+    }
+    .season-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10vw;
+      padding: 90px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .season-detail h2 {
+      font: clamp(34px, 5vw, 64px)/1.03 var(--serif);
+      margin: 0;
+    }
+    .season-detail p {
+      color: var(--muted);
+      margin-top: 0;
+      font-size: 13.5px;
+      line-height: 1.7;
+    }
+    .season-look-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 40px 0 80px;
+    }
+    .look-tile {
+      aspect-ratio: 0.76;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background-color: #1a1a18;
+    }
+    .look-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .look-tile:hover img {
+      transform: scale(1.03);
+    }
+    .look-tile::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(16, 17, 15, 0.75) 0%, rgba(16, 17, 15, 0.15) 35%, transparent 60%);
+      pointer-events: none;
+    }
+    .look-tile span {
+      position: absolute;
+      bottom: 18px;
+      left: 18px;
+      z-index: 2;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    
+    /* Section 03: Team */
+    .team {
+      background: #171815;
+      border-bottom: 1px solid var(--line);
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px 24px;
+    }
+    .person {
+      display: grid;
+      grid-template-columns: minmax(160px, 0.9fr) 1fr;
+      gap: 24px;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid transparent;
+      transition: border-color 0.3s;
+    }
+    .person:hover {
+      border-color: var(--line);
+      background: rgba(255, 255, 255, 0.015);
+    }
+    .portrait {
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 35%, #77786f, #393a35 58%, #242521);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .person:hover .portrait img { transform: scale(1.05); }
+    .portrait:empty:after {
+      content: attr(data-file);
+      position: absolute;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-size: 8px;
+      color: rgba(238, 233, 218, 0.6);
+      letter-spacing: 0.1em;
+    }
+    .person h3 {
+      font: clamp(26px, 3vw, 40px)/0.98 var(--serif);
+      margin: 10px 0;
+    }
+    .person .role {
+      font-size: 9px;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      text-transform: uppercase;
+    }
+    .person p {
+      font-size: 12px;
+      color: var(--muted);
+      max-width: 340px;
+      line-height: 1.6;
+    }
+    .person.mia {
+      grid-column: 1 / -1;
+      grid-template-columns: minmax(220px, 0.7fr) 1.3fr;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 8px;
+    }
+    .person.mia .portrait { max-width: 380px; }
+    .bio-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--accent);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    
+    /* Section 10: Development System */
+    .research-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 10vw;
+    }
+    .research-grid h2 {
+      font-size: clamp(38px, 5vw, 72px);
+      line-height: 0.96;
+      margin: 12px 0;
+    }
+    .research-grid p {
+      max-width: 440px;
+      color: var(--muted);
+      font-size: 13.5px;
+    }
+    .research-steps { border-top: 1px solid var(--line); }
+    .research-step {
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 20px;
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .research-step b {
+      font: 24px var(--serif);
+      color: var(--accent);
+      font-weight: 400;
+    }
+    .research-step h3 {
+      font: 21px var(--serif);
+      font-weight: 400;
+      margin: 0 0 6px;
+    }
+    .research-step p {
+      font-size: 12.5px;
+      margin: 0;
+      max-width: 580px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    
+    /* Section 11: Responsible Practice & Transparency */
+    .compliance {
+      padding: 40px 0 70px;
+      color: #8a8a81;
+      font-size: 11px;
+      border-top: 1px solid var(--line);
+    }
+    .compliance h3 {
+      font-size: 10px;
+      color: #bbb9ae;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .compliance p {
+      max-width: 1100px;
+      line-height: 1.7;
+      margin: 0 0 14px;
+    }
+    
+    /* Section 12: Contact */
+    .contact {
+      background: #c9b894;
+      color: #151612;
+    }
+    .contact .eyebrow { color: #4c493f; }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9vw;
+    }
+    .contact h2 {
+      font: clamp(52px, 8vw, 110px)/0.85 var(--serif);
+      margin: 16px 0;
+    }
+    .contact p {
+      max-width: 420px;
+      color: #48473f;
+      font-size: 13.5px;
+    }
+    .contact .contact-email {
+      font-size: 16px;
+      font-weight: 500;
+      color: #151612;
+      display: inline-block;
+      margin-top: 8px;
+      letter-spacing: 0.02em;
+    }
+    .contact-details {
+      align-self: end;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    .contact-details h3 {
+      font-size: 9px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin: 0 0 10px;
+      color: #383730;
+    }
+    .contact-details p {
+      font-size: 12.5px;
+      margin: 0;
+      color: #242521;
+    }
+    
+    /* Footer */
+    .footer {
+      padding: 30px 4.5vw;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+      color: #85857d;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      transition: color 0.2s;
+    }
+    .footer-links a:hover {
+      color: var(--paper);
+    }
+    .back-top {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(16, 17, 15, 0.88);
+      color: var(--paper);
+      padding: 10px 14px;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      z-index: 90;
+      backdrop-filter: blur(6px);
+      transition: background 0.2s, color 0.2s;
+    }
+    .back-top:hover {
+      background: var(--paper);
+      color: var(--ink);
+    }
+    
+    /* Cookie Consent Management */
+    .cookie-banner {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(120%);
+      width: min(calc(100% - 40px), 820px);
+      background: rgba(22, 23, 20, 0.96);
+      border: 1px solid rgba(200, 180, 140, 0.35);
+      padding: 24px 28px;
+      z-index: 1000;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.65);
+      transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .cookie-banner.show {
+      transform: translateX(-50%) translateY(0);
+    }
+    .cookie-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+    .cookie-header h4 {
+      margin: 0;
+      font: 18px var(--serif);
+      font-weight: 400;
+      color: var(--paper);
+    }
+    .cookie-banner p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .cookie-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 4px;
+    }
+    .cookie-btn {
+      padding: 10px 18px;
+      font-size: 9.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1px solid rgba(233, 229, 220, 0.25);
+      background: transparent;
+      color: var(--paper);
+      transition: all 0.2s;
+    }
+    .cookie-btn.primary {
+      background: var(--paper);
+      color: var(--ink);
+      border-color: var(--paper);
+    }
+    .cookie-btn.primary:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .cookie-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--paper);
+    }
+    
+    /* Cookie Modal */
+    .cookie-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(16, 17, 15, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 1050;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .cookie-modal-backdrop.show { display: flex; }
+    .cookie-modal {
+      background: #171815;
+      border: 1px solid var(--line);
+      width: min(100%, 640px);
+      max-height: 88vh;
+      overflow-y: auto;
+      padding: 34px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+      position: relative;
+    }
+    .cookie-modal h3 {
+      font: 26px var(--serif);
+      margin: 0 0 10px;
+      color: var(--paper);
+    }
+    .cookie-modal p.intro {
+      font-size: 12.5px;
+      color: var(--muted);
+      margin: 0 0 24px;
+      line-height: 1.6;
+    }
+    .cookie-groups {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 20px 0;
+      margin-bottom: 24px;
+    }
+    .cookie-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: flex-start;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .cookie-group:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+    .cookie-group-info h5 {
+      margin: 0 0 4px;
+      font-size: 13px;
+      color: var(--paper);
+      font-weight: 500;
+    }
+    .cookie-group-info p {
+      margin: 0;
+      font-size: 11.5px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    /* Switch toggle */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 44px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+    .switch input { opacity: 0; width: 0; height: 0; }
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background-color: #2b2d28;
+      transition: 0.3s;
+      border-radius: 24px;
+      border: 1px solid var(--line);
+    }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 3px;
+      bottom: 3px;
+      background-color: #8c8a82;
+      transition: 0.3s;
+      border-radius: 50%;
+    }
+    input:checked + .slider {
+      background-color: var(--accent);
+      border-color: var(--accent);
+    }
+    input:checked + .slider:before {
+      transform: translateX(20px);
+      background-color: var(--ink);
+    }
+    input:disabled + .slider {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .cookie-modal-foot {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    
+    /* Responsive Breakpoints */
+    @media(max-width: 1024px) {
+      .atelier-grid { grid-template-columns: repeat(2, 1fr); }
+      .innovations-grid { grid-template-columns: repeat(2, 1fr); }
+      .archive-editorial-grid { grid-template-columns: 1fr 1fr; }
+      .archive-grid { grid-template-columns: repeat(2, 1fr); }
+      .story-pillars { grid-template-columns: repeat(2, 1fr); gap: 32px; }
+    }
+    @media(max-width: 800px) {
+      .wrap { width: calc(100% - 40px); }
+      .topbar { height: 68px; padding: 0 20px; }
+      .menu-btn { display: block; }
+      .nav {
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 68px;
+        padding: 24px 20px;
+        background: #10110f;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+      }
+      .nav.open { display: flex; }
+      .hero { height: 88svh; min-height: 620px; }
+      .hero-content { padding-bottom: 12vh; }
+      .hero h1 { font-size: clamp(52px, 15vw, 92px); }
+      .hero p { max-width: 360px; }
+      .scroll-note { display: none; }
+      
+      section { padding: 82px 0; }
+      .section-head { display: block; margin-bottom: 36px; }
+      .section-head p { margin-top: 18px; }
+      
+      .intro-grid, .story-hero-grid, .material-grid, .research-grid, .contact-grid, .season-detail {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .story-photo-box:nth-child(2) { margin-top: 0; }
+      .principles { grid-template-columns: 1fr; margin-top: 42px; }
+      .principle, .principle + .principle {
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding: 20px 0;
+      }
+      .material-visual { min-height: 380px; }
+      .innovations-grid { grid-template-columns: 1fr; }
+      .atelier-grid { grid-template-columns: 1fr; }
+      .collection-cards { grid-template-columns: 1fr; gap: 16px; }
+      .collection-card, .collection-card:nth-child(2) { min-height: 460px; margin-top: 0; }
+      .archive-editorial-grid { grid-template-columns: 1fr; gap: 20px; }
+      .archive-grid { grid-template-columns: 1fr; gap: 20px; }
+      .season-banner { align-items: flex-start; flex-direction: column; }
+      .season-banner strong { font-size: 28px; }
+      .team-grid { grid-template-columns: 1fr; gap: 32px; }
+      .person, .person.mia {
+        grid-column: auto;
+        grid-template-columns: minmax(120px, 0.72fr) 1fr;
+        gap: 18px;
+      }
+      .person.mia .portrait { max-width: none; }
+      .person p { font-size: 11px; }
+      .person h3 { font-size: 30px; }
+      .season-look-grid { grid-template-columns: 1fr 1fr; }
+      .look-tile:last-child { display: none; }
+      .contact-details { grid-template-columns: 1fr; }
+      .footer { padding: 22px 20px; flex-wrap: wrap; }
+      .season-hero { min-height: 65vh; }
+      .cookie-banner { width: calc(100% - 24px); padding: 18px 20px; }
+      .cookie-modal { padding: 24px 20px; }
+    }
+    @media(max-width: 480px) {
+      .story-gallery { grid-template-columns: 1fr; }
+      .story-pillars { grid-template-columns: 1fr; gap: 24px; }
+      .person, .person.mia { grid-template-columns: 105px 1fr; gap: 14px; }
+      .person h3 { font-size: 24px; }
+      .person p { font-size: 10.5px; }
+      .hero-actions { gap: 14px; }
+      .season-look-grid { grid-template-columns: 1fr; }
+      .look-tile:last-child { display: block; }
+    }
   </style>
 </head>
 <body>
-<header class="topbar"><a class="brand" href="#home" aria-label="SOROFIB home">SOROFIB<small>TEXTILE · WOMENSWEAR</small></a><button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button><nav class="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#material">Materials</a><a href="#collection">Collections</a><a href="#season" data-season-link>SEASON</a><a href="#team">Team</a><a href="#research">Development</a><a class="contact-link" href="#contact">Contact</a><a href="#home" data-lang>EN</a></nav></header>
+
+<!-- Header Navigation -->
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="SOROFIB home">
+    SOROFIB
+    <small>TEXTILE · WOMENSWEAR</small>
+  </a>
+  <button class="menu-btn" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#about">About</a>
+    <a href="#story">Our Story</a>
+    <a href="#team">Team</a>
+    <a href="#material">Materials</a>
+    <a href="#innovations">Innovation</a>
+    <a href="#atelier">Atelier</a>
+    <a href="#collection">Collections</a>
+    <a href="#archive">Archive</a>
+    <a href="#season" data-season-link>SEASON</a>
+    <a href="#research">Development</a>
+    <a class="contact-link" href="#contact">Contact</a>
+    <a href="#home" data-lang>EN</a>
+  </nav>
+</header>
+
+<!-- Main SPA View: Home & Brand Presentation -->
 <main id="home" class="home-view">
-  <section class="hero" aria-label="SOROFIB brand introduction"><div class="hero-media" role="img" aria-label="Women’s fashion editorial with fluid fabric"></div><div class="wrap hero-content"><div class="eyebrow">A material-led womenswear studio · Los Angeles</div><h1 class="serif">Material,<br>in Motion.</h1><p>We create thoughtful womenswear shaped by fiber, touch, and the way women live every day.</p><div class="hero-actions"><a class="button" href="#collection">Explore Collection <span>↗</span></a><a class="text-link" href="#about">ABOUT SOROFIB　↓</a></div></div><div class="scroll-note">SCROLL TO EXPLORE</div></section>
-  <section id="about"><div class="wrap"><div class="section-head"><div><div class="eyebrow">01 — Brand point of view</div><h2 class="serif">Design,<br>grounded in material.</h2></div><p>A garment begins with its material, then comes to life through cut, wear, and time.</p></div><div class="intro-grid"><div class="lead">SOROFIB is a material-led womenswear studio. We begin with fiber research, bringing comfort, structure, and considered design together.</div><div class="body-copy"><p>We created SOROFIB to reconnect textiles, design, and real life. We consider how fabrics feel, drape, recover, and wear over time—designing clothes to move with the body, beyond a single moment.</p><p>With restrained lines and attentive product development, we explore enduring pieces for the modern woman's wardrobe. Our point of view lives in proportion, texture, and detail.</p></div></div><div class="principles"><article class="principle"><b>01</b><h3>Material First</h3><p>We shape each product around fiber and fabric, letting material guide the design.</p></article><article class="principle"><b>02</b><h3>Designed to Be Worn</h3><p>We consider movement, touch, and everyday styling so good design feels natural in real life.</p></article><article class="principle"><b>03</b><h3>Made for the Long View</h3><p>We value wearability, versatility, and longer use over the pull of fleeting trends.</p></article></div></div></section>
-  <section class="material" id="material"><div class="wrap material-grid"><div class="material-visual" role="img" aria-label="Abstract fiber structure visualization"><img src="assets/fiber-structure-study.jpg" alt="Fiber structure study" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='fiber-structure-study.jpg'}"></div><div class="material-copy"><div class="eyebrow">02 — Fiber & textile</div><h2 class="serif">Understand fiber.<br>Rethink the way we wear.</h2><p>Material is part of the product experience, not a footnote. SOROFIB studies fibers, yarns, and textile structures to understand differences in softness, recovery, drape, and durability.</p><p>Sorona® is one bio-based material platform we are exploring. Performance varies with fiber blends, fabric construction, and garment finishing. We describe material attributes carefully, based on product testing and available supplier information.</p><ul class="material-list"><li><div class="list-head"><strong>Fiber and textile structure research</strong><span>01</span></div><p>Exploring yarn twist, knit gauge, and microscopic weave architecture to optimize breathability, fluid drape, and tactile depth.</p></li><li><div class="list-head"><strong>Touch, recovery, and wear experience</strong><span>02</span></div><p>Studying softness and multi-directional elastic memory so fluid silhouettes comfortably hold their form through daily motion.</p></li><li><div class="list-head"><strong>Bio-based polymers &amp; Sorona® platform</strong><span>03</span></div><p>Investigating renewable, plant-derived feedstocks to minimize environmental impact without compromising luxurious hand-feel.</p></li><li><div class="list-head"><strong>Product durability and lifecycle thinking</strong><span>04</span></div><p>Engineering wash resilience, pilling resistance, and dimensional integrity for enduring pieces designed to last across seasons.</p></li><li><div class="list-head"><strong>Mindful finishing &amp; garment craft</strong><span>05</span></div><p>Employing responsible water stewardship and low-impact treatments that honor and preserve the natural behavior of the fiber.</p></li></ul></div></div></section>
-  <section id="collection"><div class="wrap"><div class="section-head"><div><div class="eyebrow">03 — The collection</div><h2 class="serif">Room for everyday.<br>Focus on texture.</h2></div><p>Our womenswear collections explore the balance between fabric and silhouette, grounded in modern proportions and wearability.</p></div><div class="collection-cards"><a class="collection-card" href="#season" data-season-link><div class="collection-photo" role="img" aria-label="Women’s collection look 01"></div><div class="collection-meta"><div class="eyebrow">CURRENT SEASON · 01</div><h3 class="serif">The Quiet Form</h3><p>Soft structure, fluid lines, and considered materials shape this season's approach to everyday dressing.</p><span class="text-link">Explore the Season　↗</span></div></a><a class="collection-card" href="#season" data-season-link><div class="collection-photo" role="img" aria-label="Women’s collection look 02"></div><div class="collection-meta"><div class="eyebrow">SIGNATURE WARDROBE · 02</div><h3 class="serif">A Study in Ease</h3><p>Relaxed, considered silhouettes let each piece move naturally between settings.</p><span class="text-link">Explore the Collection　↗</span></div></a></div><div class="season-banner"><div><div class="eyebrow">DEDICATED SEASON PAGE</div><strong class="serif">Season Story · The Quiet Form</strong></div><a class="button" href="#season" data-season-link>Explore the Season　↗</a></div></div></section>
-  <section id="team" class="team"><div class="wrap"><div class="section-head"><div><div class="eyebrow">04 — People behind the work</div><h2 class="serif">Different disciplines,<br>one considered wardrobe.</h2></div><p>Brand, materials, and product development come together at the same table. Our team brings complementary perspectives to the work.</p></div><div class="team-grid">
-    <article class="person mia"><div class="portrait"><img src="assets/mia-zhang-portrait.jpg" alt="Mia Zhang portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='mia-zhang-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='mia-zhang-portrait.jpg'}"></div><div><div class="eyebrow">Founder &amp; Creative Director</div><h3 class="serif">Mia Zhang</h3><div class="role">Brand direction · Product strategy</div><p>Born in Taipei, Mia studied business management and market strategy at the National University of Singapore. She brings more than five years of sales leadership experience in her family business, followed by entrepreneurial and investment work in the United States. Her interests include material innovation, apparel development, and global markets. At SOROFIB, she guides brand direction, product definition, and commercialization.</p><p>Mia believes a deeper understanding of materials makes a product's value clearer. From fiber selection to the finished garment, design should be grounded in real wear and lasting use.</p><a class="bio-link" href="#contact">Founder &amp; Creative Director　↗</a></div></article>
-    <article class="person"><div class="portrait"><img src="assets/elias-thorn-portrait.jpg" alt="Elias Thorn portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='elias-thorn-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='elias-thorn-portrait.jpg'}"></div><div><div class="eyebrow">Material Science</div><h3 class="serif">Elias Thorn</h3><div class="role">Fiber & material research</div><p>Elias focuses on polymer and fiber research, examining material structures, baseline properties, and potential apparel applications to inform product development.</p></div></article>
-    <article class="person"><div class="portrait"><img src="assets/isabella-lazatti-portrait.jpg" alt="Isabella Lazatti portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='isabella-lazatti-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='isabella-lazatti-portrait.jpg'}"></div><div><div class="eyebrow">Creative Direction</div><h3 class="serif">Isabella Lazatti</h3><div class="role">Creative & collection direction</div><p>Isabella works across styling and creative direction, translating cultural and trend observations into clear, considered, wearable collection concepts.</p></div></article>
-    <article class="person"><div class="portrait"><img src="assets/julian-thorn-portrait.jpg" alt="Julian Thorn portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='julian-thorn-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='julian-thorn-portrait.jpg'}"></div><div><div class="eyebrow">Product Engineering</div><h3 class="serif">Julian Thorn</h3><div class="role">Garment structure & development</div><p>Julian focuses on garment construction and product development, bringing pattern, fabric behavior, and make details together from concept through finished sample.</p></div></article>
-    <article class="person"><div class="portrait"><img src="assets/elena-rossi-portrait.jpg" alt="Elena Rossi portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='elena-rossi-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='elena-rossi-portrait.jpg'}"></div><div><div class="eyebrow">Textile Development</div><h3 class="serif">Elena Rossi</h3><div class="role">Textile & knit development</div><p>Elena works on knit structures and yarn development, exploring fibers such as Sorona® across textile constructions and collaborating with the product team to assess wear experience.</p></div></article>
-  </div></div></section>
-  <section id="research"><div class="wrap research-grid"><div><div class="eyebrow">05 — Development system</div><h2 class="serif">From fiber<br>to wardrobe.</h2><p>We develop ideas through material exploration, samples, and wear evaluation to create pieces made for a lasting place in the wardrobe.</p></div><div class="research-steps"><article class="research-step"><b>01</b><div><h3>Material Selection</h3><p>We review fiber, yarn, and fabric information against design goals, documenting available supplier materials.</p></div></article><article class="research-step"><b>02</b><div><h3>Textile & Structure Studies</h3><p>We study hand feel, drape, recovery, and construction to identify fabrics suited to each product's use.</p></div></article><article class="research-step"><b>03</b><div><h3>Pattern & Sample Development</h3><p>Material behavior informs pattern and construction decisions as we refine proportion, movement, and detail.</p></div></article><article class="research-step"><b>04</b><div><h3>Wear Feedback & Iteration</h3><p>Fit sessions, care considerations, and practical feedback guide continued revisions and real-world evaluation.</p></div></article></div></div></section>
-  <section class="compliance" id="compliance"><div class="wrap"><div class="eyebrow">06 — Responsible practice</div><h2 class="serif" style="font-size:36px">Responsibility is an ongoing practice.</h2><p>SOROFIB considers responsible material choices part of a long-term product strategy, with attention to sourcing, durability, and product life. Bio-based content, environmental attributes, and certifications for Sorona® or other materials should be verified against supplier documentation, product labeling, and applicable regulations. Environmental impacts vary with formulation, manufacturing, use, and care. We do not make unverified broad environmental or certification claims.</p><p>Product imagery and collection information are presented for brand reference. Actual materials, colors, care instructions, and availability are subject to product details and official labeling. Website content does not constitute medical, performance, or environmental certification claims.</p></div></section>
+  
+  <!-- Hero Editorial Banner -->
+  <section class="hero" aria-label="SOROFIB brand introduction">
+    <div class="hero-media">
+      <img class="hero-img" src="assets/hero-womenswear-editorial.jpg" alt="SOROFIB — Women's fashion editorial" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='hero-womenswear-editorial.jpg'}">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="wrap hero-content">
+      <div class="eyebrow">A material-led womenswear studio · Los Angeles</div>
+      <h1 class="serif">Material,<br>in Motion.</h1>
+      <p>We create thoughtful womenswear shaped by fiber, touch, and the way women live every day.</p>
+      <div class="hero-actions">
+        <a class="button" href="#collection">Explore Collection <span>↗</span></a>
+        <a class="text-link" href="#about">ABOUT SOROFIB ↓</a>
+      </div>
+    </div>
+    <div class="scroll-note">SCROLL TO EXPLORE</div>
+  </section>
+
+  <!-- Section 01: About SOROFIB -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">01 — Brand Point of View</div>
+          <h2 class="serif">Design,<br>grounded in material.</h2>
+        </div>
+        <p>A garment begins at the fiber level, taking form through yarn twist, fabric structure, and daily wear over time.</p>
+      </div>
+      <div class="intro-grid">
+        <div class="lead">SOROFIB is an independent womenswear and textile research studio. We unite bio-based polymer exploration, tactile structure, and restrained tailoring.</div>
+        <div class="body-copy">
+          <p>We founded SOROFIB to reconnect fiber technology, dressmaking, and everyday reality. Rather than beginning with abstract fashion sketching, our designs originate from how textiles drape, stretch, recover, and feel against the skin throughout dynamic movement.</p>
+          <p>With quiet lines, measured proportions, and attentive product engineering, we create enduring foundational pieces for the international woman's wardrobe. Our perspective lives in tactile permanence, structural integrity, and exquisite detail.</p>
+        </div>
+      </div>
+      <div class="principles">
+        <article class="principle">
+          <b>01</b>
+          <h3>Material First</h3>
+          <p>We shape each product around fiber behavior and yarn architecture, allowing fabric mechanics to guide the silhouette.</p>
+        </article>
+        <article class="principle">
+          <b>02</b>
+          <h3>Designed to Be Worn</h3>
+          <p>We evaluate ergonomic movement, tactile softness, and versatile styling so refined design feels intuitive and effortless.</p>
+        </article>
+        <article class="principle">
+          <b>03</b>
+          <h3>Made for the Long View</h3>
+          <p>We prioritize wash resilience, shape recovery, and lasting aesthetic relevance over the churn of seasonal trend cycles.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 02: Our Story -->
+  <section id="story" class="story-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">02 — Studio Heritage &amp; Ethos</div>
+          <h2 class="serif">Our Story.<br>From Fiber to Form.</h2>
+        </div>
+        <p>Bridging polymer research, material integrity, and contemporary garment architecture in Los Angeles.</p>
+      </div>
+      
+      <div class="story-hero-grid">
+        <div class="story-text">
+          <div class="story-lead">SOROFIB began with a single conviction: genuine luxury in modern womenswear must start with the structural integrity of the fiber itself.</div>
+          <p>Operating from our Los Angeles studio, SOROFIB brings together textile engineers, pattern makers, and fashion designers around a collaborative workbench. In an industry dominated by synthetic blends that pill and lose recovery, or delicate fabrics unsuited for modern schedules, we sought a third path—garments that embody liquid softness yet possess remarkable shape memory.</p>
+          <p>Our research delves deeply into bio-based polymer platforms, including Sorona®, evaluating how renewably sourced plant components can replace fossil-fuel synthetics without sacrificing silky drape or tailoring precision. By working closely with progressive spinning mills and textile weavers, we refine each yarn count and gauge to yield clothing that remains uncompromised over years of wear.</p>
+          <p>Our long-term direction is straightforward: expanding a permanent wardrobe library characterized by tactile permanence, circular responsibility, and timeless silhouettes tailored for discerning women worldwide.</p>
+        </div>
+        <div class="story-gallery">
+          <div class="story-photo-box">
+            <img src="assets/Studio Fitting.webp" alt="SOROFIB atelier studio fitting" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Studio Fitting.webp'}">
+            <div class="story-photo-caption">Studio Fitting · Form &amp; Movement Evaluation</div>
+          </div>
+          <div class="story-photo-box">
+            <img src="assets/Textile Drape Study.webp" alt="SOROFIB textile drape study" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Textile Drape Study.webp'}">
+            <div class="story-photo-caption">Textile Architecture · Structural Drape Study</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="story-pillars">
+        <div class="story-pillar">
+          <span>01 / PHILOSOPHY</span>
+          <h4>Material Honesty</h4>
+          <p>We celebrate the intrinsic attributes of fibers—never masking poor materials with superficial ornamentation or fragile coatings.</p>
+        </div>
+        <div class="story-pillar">
+          <span>02 / VISION</span>
+          <h4>Tactile Permanence</h4>
+          <p>Crafting a core wardrobe of quiet confidence where clothing retains its hand-feel, structural line, and elegance across years of active life.</p>
+        </div>
+        <div class="story-pillar">
+          <span>03 / MISSION</span>
+          <h4>Science in Service of Wear</h4>
+          <p>Translating sophisticated polymer science into everyday fluid garments that breathe, stretch, and recover without artificial stiffness.</p>
+        </div>
+        <div class="story-pillar">
+          <span>04 / HORIZON</span>
+          <h4>Responsible Innovation</h4>
+          <p>Gradually substituting petroleum-derived synthetics with verified bio-circular feedstocks and traceable mill partnerships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 03: Team & Disciplines -->
+  <section id="team" class="team">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">03 — People Behind the Work</div>
+          <h2 class="serif">Different disciplines,<br>one considered wardrobe.</h2>
+        </div>
+        <p>Brand direction, polymer science, and garment engineering collaborate at the same workbench to rethink womenswear.</p>
+      </div>
+      
+      <div class="team-grid">
+        <!-- Mia Zhang -->
+        <article class="person mia">
+          <div class="portrait">
+            <img src="assets/mia-zhang-portrait.jpg" alt="Mia Zhang portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='mia-zhang-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='mia-zhang-portrait.jpg'}">
+          </div>
+          <div>
+            <div class="eyebrow">Founder &amp; Creative Director</div>
+            <h3 class="serif">Mia Zhang</h3>
+            <div class="role">Brand Direction · Product Strategy</div>
+            <p>Born in Taipei, Mia studied business management and market strategy at the National University of Singapore. She brings more than five years of sales leadership experience in her family business, followed by entrepreneurial and investment work in the United States. Her interests include material innovation, apparel development, and global markets. At SOROFIB, she guides brand direction, product definition, and commercialization.</p>
+            <p>Mia believes a deeper understanding of materials makes a product's value clearer. From fiber selection to the finished garment, design should be grounded in real wear and lasting use.</p>
+            <span class="bio-link">Founder &amp; Creative Director</span>
+          </div>
+        </article>
+
+        <!-- Elias Thorn -->
+        <article class="person">
+          <div class="portrait">
+            <img src="assets/elias-thorn-portrait.jpg" alt="Elias Thorn portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='elias-thorn-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='elias-thorn-portrait.jpg'}">
+          </div>
+          <div>
+            <div class="eyebrow">Material Science</div>
+            <h3 class="serif">Elias Thorn</h3>
+            <div class="role">Fiber &amp; Material Research</div>
+            <p>Elias focuses on polymer physics and bio-fiber research, examining microscopic crystal structures, recovery thresholds, and apparel blend mechanics to inform our textile development.</p>
+          </div>
+        </article>
+
+        <!-- Isabella Lazatti -->
+        <article class="person">
+          <div class="portrait">
+            <img src="assets/isabella-lazatti-portrait.jpg" alt="Isabella Lazatti portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='isabella-lazatti-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='isabella-lazatti-portrait.jpg'}">
+          </div>
+          <div>
+            <div class="eyebrow">Creative Direction</div>
+            <h3 class="serif">Isabella Lazatti</h3>
+            <div class="role">Collection &amp; Silhouette Direction</div>
+            <p>Isabella works across styling and silhouette development, translating material properties and cultural observations into fluid, wearable, and timeless collection concepts.</p>
+          </div>
+        </article>
+
+        <!-- Julian Thorn -->
+        <article class="person">
+          <div class="portrait">
+            <img src="assets/julian-thorn-portrait.jpg" alt="Julian Thorn portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='julian-thorn-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='julian-thorn-portrait.jpg'}">
+          </div>
+          <div>
+            <div class="eyebrow">Product Engineering</div>
+            <h3 class="serif">Julian Thorn</h3>
+            <div class="role">Garment Structure &amp; Make Details</div>
+            <p>Julian oversees pattern drafting and technical make specifications, harmonizing fabric drape behavior with seam construction from initial muslin prototype through finished production.</p>
+          </div>
+        </article>
+
+        <!-- Elena Rossi -->
+        <article class="person">
+          <div class="portrait">
+            <img src="assets/elena-rossi-portrait.jpg" alt="Elena Rossi portrait" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='elena-rossi-portrait.jpg'}else{this.remove();this.parentElement.dataset.file='elena-rossi-portrait.jpg'}">
+          </div>
+          <div>
+            <div class="eyebrow">Textile Development</div>
+            <h3 class="serif">Elena Rossi</h3>
+            <div class="role">Knit Structures &amp; Yarn Development</div>
+            <p>Elena crafts custom knit geometries and yarn blends, pairing Sorona® fibers with silk, linen, and Merino wool to evaluate tactile softness, breathability, and skin comfort.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 04: Materials & Fiber Research -->
+  <section class="material" id="material">
+    <div class="wrap material-grid">
+      <div class="material-visual" role="img" aria-label="Abstract fiber structure visualization">
+        <img src="assets/fiber-structure-study.jpg" alt="Fiber structure study" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='fiber-structure-study.jpg'}">
+      </div>
+      <div class="material-copy">
+        <div class="eyebrow">04 — Fiber &amp; Textile Science</div>
+        <h2 class="serif">Understand fiber.<br>Rethink the way we wear.</h2>
+        <p>Material is the essence of the garment experience, never an afterthought. SOROFIB examines polymers, spinning twists, and weave densities to understand differences in tactile softness, multi-directional recovery, moisture management, and durability.</p>
+        <p>Sorona® is one bio-based material platform we are actively exploring. Engineered with 37% plant-based components, it provides inherent elasticity and wrinkle resilience without heavy elastane. We describe all material performance carefully, verified against empirical testing and certified supplier documentation.</p>
+        
+        <ul class="material-list">
+          <li>
+            <div class="list-head"><strong>Fiber and textile structure research</strong><span>01</span></div>
+            <p>Exploring yarn twist, knit gauge, and microscopic weave architecture to optimize breathability, fluid drape, and tactile depth.</p>
+          </li>
+          <li>
+            <div class="list-head"><strong>Touch, recovery, and wear experience</strong><span>02</span></div>
+            <p>Studying softness and multi-directional elastic memory so fluid silhouettes comfortably hold their form through daily motion.</p>
+          </li>
+          <li>
+            <div class="list-head"><strong>Bio-based polymers &amp; Sorona® platform</strong><span>03</span></div>
+            <p>Investigating renewable, plant-derived feedstocks to minimize environmental impact without compromising luxurious hand-feel.</p>
+          </li>
+          <li>
+            <div class="list-head"><strong>Product durability and lifecycle thinking</strong><span>04</span></div>
+            <p>Engineering wash resilience, pilling resistance, and dimensional integrity for enduring pieces designed to last across seasons.</p>
+          </li>
+          <li>
+            <div class="list-head"><strong>Mindful finishing &amp; garment craft</strong><span>05</span></div>
+            <p>Employing responsible water stewardship and low-impact treatments that honor and preserve the natural behavior of the fiber.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 05: Sorona® Material Platforms & Innovation -->
+  <section class="innovations-section" id="innovations">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">05 — Fabric Technology</div>
+          <h2 class="serif">Fabric Innovation.<br>Bio-Based Platforms.</h2>
+        </div>
+        <p>Inspired by verified Sorona® polymer platforms to explore stretch, warmth, drape, and structural performance in womenswear.</p>
+      </div>
+      
+      <div class="innovations-note">
+        <strong>Material Research Reference:</strong> SOROFIB studies commercial polymer advancements pioneered by Sorona® to inform our bespoke fabric weaves. The following categories represent core textile technologies we analyze for womenswear suitability, balancing renewable ingredients with rigorous everyday performance.
+      </div>
+
+      <div class="innovations-grid">
+        <!-- Agile -->
+        <article class="innovation-card">
+          <div>
+            <span class="innovation-tag">Technology 01 / Stretch &amp; Recovery</span>
+            <h3>Agile Platform</h3>
+            <p>An innovative comfort-stretch technology engineered to move with the body. Unlike traditional spandex that degrades over time with chlorine, heat, and laundering, Agile-inspired fibers provide resilient, mechanical multi-directional stretch that bounces back perpetually without bagging at knees or elbows.</p>
+          </div>
+          <div class="innovation-meta">
+            <span>Primary Focus: Active Fluidity</span>
+            <span>Zero Knee-Sag</span>
+          </div>
+        </article>
+
+        <!-- Aura -->
+        <article class="innovation-card">
+          <div>
+            <span class="innovation-tag">Technology 02 / Insulation &amp; Loft</span>
+            <h3>Aura Platform</h3>
+            <p>Lightweight, breathable thermal insulation delivering down-like loft, exceptional softness, and dependable warmth without bulk. Derived partially from plant-based feedstocks, it compresses effortlessly and springs back to original loft, ideal for trans-seasonal outerwear layers and quilted jackets.</p>
+          </div>
+          <div class="innovation-meta">
+            <span>Primary Focus: Thermal Comfort</span>
+            <span>High-Loft Weightless</span>
+          </div>
+        </article>
+
+        <!-- Luxe -->
+        <article class="innovation-card">
+          <div>
+            <span class="innovation-tag">Technology 03 / Silk &amp; Natural Blends</span>
+            <h3>Luxe Platform</h3>
+            <p>Engineered for intimate blends with natural fibers—including Mulberry silk, fine Merino wool, organic cotton, and European linen. It imparts a remarkably fluid, liquid hand, gentle cool-to-touch surface, and luminous drape that enhances the tactile luxury of blouses and evening dresses.</p>
+          </div>
+          <div class="innovation-meta">
+            <span>Primary Focus: Tactile Touch</span>
+            <span>Silk-Like Hand</span>
+          </div>
+        </article>
+
+        <!-- Profile -->
+        <article class="innovation-card">
+          <div>
+            <span class="innovation-tag">Technology 04 / Structure &amp; Crease Resistance</span>
+            <h3>Profile Platform</h3>
+            <p>Designed for tailored womenswear that demands clean architectural lines. Profile-based weaves provide crisp creases, high wrinkle resistance, and dimensional stability, ensuring tailored trousers and structured trench coats maintain a freshly pressed look through transatlantic flights.</p>
+          </div>
+          <div class="innovation-meta">
+            <span>Primary Focus: Tailored Structure</span>
+            <span>Crease-Resistant</span>
+          </div>
+        </article>
+
+        <!-- Revive -->
+        <article class="innovation-card">
+          <div>
+            <span class="innovation-tag">Technology 05 / Shape Memory &amp; Longevity</span>
+            <h3>Revive Platform</h3>
+            <p>Focused on long-term shape memory and dimensional stability over continuous wash and wear cycles. It resists fabric shrinkage, pilling, and fiber distortion, offering unmatched durability for high-rotation wardrobe foundations and knitwear pieces.</p>
+          </div>
+          <div class="innovation-meta">
+            <span>Primary Focus: Durability</span>
+            <span>Wash Resilience</span>
+          </div>
+        </article>
+
+        <!-- Sorona for Faux Fur -->
+        <article class="innovation-card">
+          <div>
+            <span class="innovation-tag">Technology 06 / Responsible Fur Alternative</span>
+            <h3>Bio Faux Fur</h3>
+            <p>A plant-based alternative to conventional petrochemical faux fur. Provides sumptuous tactile softness, realistic natural luster, and moisture repellency. Offers animal-free warmth with significantly lower environmental footprint and superior fiber resilience.</p>
+          </div>
+          <div class="innovation-meta">
+            <span>Primary Focus: Plant-Derived Plush</span>
+            <span>Cruelty-Free Warmth</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 06: Interactive Atelier Studies (SKETCHES TO OUTPUT DESIGN ON HOVER) -->
+  <section class="atelier-section" id="atelier">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">06 — Interactive Atelier Archive</div>
+          <h2 class="serif">Design in Process.<br>From Sketch to Form.</h2>
+        </div>
+        <div>
+          <p class="atelier-header-desc">Explore the dialogue between initial atelier hand sketches and realized garments. Hover your cursor over each sketch to reveal the finished output design.</p>
+          <div class="atelier-interaction-hint">
+            <span>✦ Cursor Interaction: Hover sketch to reveal output design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="atelier-grid">
+        <!-- Atelier 01 -->
+        <article class="atelier-card" tabindex="0" role="region" aria-label="Atelier 01: SoroFib Shell v.1. Hover to view realized gown">
+          <span class="atelier-badge">ATELIER 01</span>
+          <span class="atelier-hover-indicator">Hover to View Design ↗</span>
+          <div class="atelier-media-wrap">
+            <img class="sketch-layer" src="assets/atelier-01-sorofib-shell-sketch.webp" alt="Atelier 01 SoroFib Shell couture ballgown sketch" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='atelier-01-sorofib-shell-sketch.webp'}">
+            <img class="output-layer" src="assets/Atelier 01 output 3_4.webp" alt="Atelier 01 SoroFib Shell realized couture gown on model" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 01 output 3_4.webp'}">
+          </div>
+          <div class="atelier-meta">
+            <h4>SoroFib Shell v.1</h4>
+            <span class="phase">Prototype Phase · Architectural Drape Gown</span>
+          </div>
+        </article>
+
+        <!-- Atelier 02 -->
+        <article class="atelier-card" tabindex="0" role="region" aria-label="Atelier 02: Structural Silhouette. Hover to view tailored cape suit">
+          <span class="atelier-badge">ATELIER 02</span>
+          <span class="atelier-hover-indicator">Hover to View Design ↗</span>
+          <div class="atelier-media-wrap">
+            <img class="sketch-layer" src="assets/Atelier 02 sketch.webp" alt="Atelier 02 Structural silhouette runway adaptation sketch" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 02 sketch.webp'}">
+            <img class="output-layer" src="assets/Atelier 02 output.webp" alt="Atelier 02 Structural silhouette runway cape suit on model" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 02 output.webp'}">
+          </div>
+          <div class="atelier-meta">
+            <h4>Structural Silhouette</h4>
+            <span class="phase">Runway Adaptation · Cape Tailoring &amp; Trousers</span>
+          </div>
+        </article>
+
+        <!-- Atelier 03 -->
+        <article class="atelier-card" tabindex="0" role="region" aria-label="Atelier 03: Fiber Weave Logic. Hover to view bio-gold structural weave">
+          <span class="atelier-badge">ATELIER 03</span>
+          <span class="atelier-hover-indicator">Hover to View Design ↗</span>
+          <div class="atelier-media-wrap">
+            <img class="sketch-layer" src="assets/Atelier 03 sketch.webp" alt="Atelier 03 Fiber weave logic gown sketch" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 03 sketch.webp'}">
+            <img class="output-layer" src="assets/Atelier 03 output.webp" alt="Atelier 03 Fiber weave logic finished gown on model" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 03 output.webp'}">
+          </div>
+          <div class="atelier-meta">
+            <h4>Fiber Weave Logic</h4>
+            <span class="phase">Material Articulation · Bio-Gold Structural Weave</span>
+          </div>
+        </article>
+
+        <!-- Atelier 04 -->
+        <article class="atelier-card" tabindex="0" role="region" aria-label="Atelier 04: Fluid Daywear. Hover to view relaxed tailored outfit">
+          <span class="atelier-badge">ATELIER 04</span>
+          <span class="atelier-hover-indicator">Hover to View Design ↗</span>
+          <div class="atelier-media-wrap">
+            <img class="sketch-layer" src="assets/Atelier 04 sketch.webp" alt="Atelier 04 Relaxed daywear silhouette sketch" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 04 sketch.webp'}">
+            <img class="output-layer" src="assets/Atelier 04 output.webp" alt="Atelier 04 Relaxed tailored daywear on model" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 04 output.webp'}">
+          </div>
+          <div class="atelier-meta">
+            <h4>Fluid Modern Daywear</h4>
+            <span class="phase">Contemporary Daywear · Relaxed Fluid Separation</span>
+          </div>
+        </article>
+
+        <!-- Atelier 05 -->
+        <article class="atelier-card" tabindex="0" role="region" aria-label="Atelier 05: Sorona Trench. Hover to view outerwear trench">
+          <span class="atelier-badge">ATELIER 05</span>
+          <span class="atelier-hover-indicator">Hover to View Design ↗</span>
+          <div class="atelier-media-wrap">
+            <img class="sketch-layer" src="assets/Atelier 05 sketch.webp" alt="Atelier 05 Trench coat architectural sketch" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 05 sketch.webp'}">
+            <img class="output-layer" src="assets/Atelier 05 output.webp" alt="Atelier 05 Sorona trench coat on model in nature" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 05 output.webp'}">
+          </div>
+          <div class="atelier-meta">
+            <h4>Sorona® Trench Architecture</h4>
+            <span class="phase">Outerwear Phase · Weather-Resistant Fluid Trench</span>
+          </div>
+        </article>
+
+        <!-- Atelier 06 -->
+        <article class="atelier-card" tabindex="0" role="region" aria-label="Atelier 06: Articulated Motion Shell. Hover to view active track set">
+          <span class="atelier-badge">ATELIER 06</span>
+          <span class="atelier-hover-indicator">Hover to View Design ↗</span>
+          <div class="atelier-media-wrap">
+            <img class="sketch-layer" src="assets/Atelier 06 sketch.webp" alt="Atelier 06 Articulated movement technical sketch" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 06 sketch.webp'}">
+            <img class="output-layer" src="assets/Atelier 06 output.webp" alt="Atelier 06 Articulated performance running set on athlete" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='Atelier 06 output.webp'}">
+          </div>
+          <div class="atelier-meta">
+            <h4>Articulated Motion Shell</h4>
+            <span class="phase">Performance Phase · Ergonomic Movement Geometry</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 07: Collections Overview -->
+  <section id="collection">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">07 — Current Season Collection</div>
+          <h2 class="serif">Room for everyday.<br>Focus on texture.</h2>
+        </div>
+        <p>Our womenswear collections explore the balance between material integrity and silhouette, grounded in modern proportions and all-day wearability.</p>
+      </div>
+      
+      <div class="collection-cards">
+        <a class="collection-card" href="#season" data-season-link>
+          <div class="collection-photo" role="img" aria-label="Women’s collection look 01"></div>
+          <div class="collection-meta">
+            <div class="eyebrow">CURRENT SEASON · 01</div>
+            <h3 class="serif">The Quiet Form</h3>
+            <p>Soft structure, fluid lines, and considered materials shape this season's approach to effortless everyday dressing.</p>
+            <span class="text-link">Explore the Season ↗</span>
+          </div>
+        </a>
+        <a class="collection-card" href="#season" data-season-link>
+          <div class="collection-photo" role="img" aria-label="Women’s collection look 02"></div>
+          <div class="collection-meta">
+            <div class="eyebrow">SIGNATURE WARDROBE · 02</div>
+            <h3 class="serif">A Study in Ease</h3>
+            <p>Relaxed, architectural silhouettes let each piece transition naturally between professional settings and personal leisure.</p>
+            <span class="text-link">Explore the Collection ↗</span>
+          </div>
+        </a>
+      </div>
+      
+      <div class="season-banner">
+        <div>
+          <div class="eyebrow">DEDICATED SEASON PRESENTATION</div>
+          <strong class="serif">Season Story · The Quiet Form</strong>
+        </div>
+        <a class="button" href="#season" data-season-link>Explore Full Lookbook ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 08: Archive Lookbook & Permanent Wardrobe (Original Collection Images) -->
+  <section id="archive" class="archive-lookbook-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">08 — Archival Collections &amp; Garments</div>
+          <h2 class="serif">Archive Collection.<br>Technical Silhouettes.</h2>
+        </div>
+        <p>A definitive look at our foundational garment creations, technical shells, and specialized fiber weave executions.</p>
+      </div>
+      
+      <!-- Editorial Lookbook Grid from Client Image 1 -->
+      <div class="archive-editorial-grid">
+        <!-- 001 FiboAir Shell -->
+        <article class="archive-editorial-card tall">
+          <img src="assets/001 FiboAir Shell.webp" alt="001 / FIBOAIR SHELL" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='001 FiboAir Shell.webp'}">
+          <div class="archive-tag-strip">
+            001 / FIBOAIR SHELL 001 · TECHNICAL MATRIX · 001 / FIBOAIR SHELL
+          </div>
+        </article>
+
+        <!-- Column with 002 and 003 -->
+        <div class="archive-stack-col">
+          <!-- 002 Sorona Trench -->
+          <article class="archive-editorial-card" style="min-height: 220px;">
+            <img src="assets/002 Sorona Trench Coat.webp" alt="002 / SORONA® TRENCH COAT" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='002 Sorona Trench Coat.webp'}">
+            <div class="archive-tag-strip">
+              002 / SORONA® TRENCH COAT · 002 / WEATHER RESISTANT
+            </div>
+          </article>
+
+          <!-- 003 Articulated Shell -->
+          <article class="archive-editorial-card" style="min-height: 236px;">
+            <img src="assets/003 Articulated Performance Shell.webp" alt="003 / ARTICULATED PERFORMANCE SHELL" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='003 Articulated Performance Shell.webp'}">
+            <div class="archive-tag-strip">
+              003 / ARTICULATED PERFORMANCE SHELL
+            </div>
+          </article>
+        </div>
+
+        <!-- 004 Bio-Gold Weave -->
+        <article class="archive-editorial-card tall">
+          <img src="assets/004 Bio-Gold Structural Weave.webp" alt="004 / BIO-GOLD STRUCTURAL WEAVE" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='004 Bio-Gold Structural Weave.webp'}">
+          <div class="archive-tag-strip">
+            004 / BIO-GOLD STRUCTURAL WEAVE
+          </div>
+        </article>
+      </div>
+
+      <div class="archive-cta-wrap">
+        <a class="archive-lookbook-btn" href="#season" data-season-link>View Complete Collection Lookbook →</a>
+      </div>
+
+      <!-- Permanent Wardrobe Garments -->
+      <div class="permanent-wardrobe-wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Wardrobe Anchors</div>
+            <h3 class="serif" style="font-size: 32px; margin: 8px 0 0;">Permanent Wardrobe Foundations</h3>
+          </div>
+          <p>Everyday essentials tailored in bio-circular fabrics, engineered for longevity and effortless daily dressing.</p>
+        </div>
+
+        <div class="archive-grid">
+          <!-- Item 01: Winter Tailored Coat -->
+          <article class="archive-item">
+            <div class="archive-img-wrap">
+              <img src="assets/01 Winter Tailored Coat.webp" alt="Winter Tailored Coat in structured fabric" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='01 Winter Tailored Coat.webp'}">
+              <span class="archive-badge">Archive Core</span>
+            </div>
+            <div class="archive-info">
+              <span class="archive-cat">Outerwear / Tailoring</span>
+              <h3>Winter Tailored Coat</h3>
+              <p>Constructed with high-density Profile weave. Delivers crisp architectural lines with natural thermal loft and enduring crease recovery.</p>
+              <div class="archive-spec">
+                <span>Fabric: Wool &amp; Bio-Polymer Blend</span>
+                <span>Silhouette: Relaxed Overcoat</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 02: Spring Fluid Trouser -->
+          <article class="archive-item">
+            <div class="archive-img-wrap">
+              <img src="assets/02 Spring Fluid Trouser.webp" alt="Spring Fluid Trouser with natural drape" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='02 Spring Fluid Trouser.webp'}">
+              <span class="archive-badge">Archive Signature</span>
+            </div>
+            <div class="archive-info">
+              <span class="archive-cat">Bottoms / Fluid Weave</span>
+              <h3>Spring Fluid Trouser</h3>
+              <p>Wide-leg silhouette utilizing Agile multi-directional stretch. Retains its sharp center pleat without knee deformation throughout long workdays.</p>
+              <div class="archive-spec">
+                <span>Fabric: High-Twist Agile Weave</span>
+                <span>Silhouette: Wide-Leg High-Rise</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 03: Spring Drape Blouse -->
+          <article class="archive-item">
+            <div class="archive-img-wrap">
+              <img src="assets/03 Spring Drape Blouse.webp" alt="Spring Drape Blouse in silky fabric" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='03 Spring Drape Blouse.webp'}">
+              <span class="archive-badge">Archive Foundation</span>
+            </div>
+            <div class="archive-info">
+              <span class="archive-cat">Tops / Luxe Touch</span>
+              <h3>Spring Drape Blouse</h3>
+              <p>Featuring Luxe silk-touch yarn technology. Liquid-soft drape with subtle matte sheen and natural breathability against bare skin.</p>
+              <div class="archive-spec">
+                <span>Fabric: Bio-Luxe Silk Touch</span>
+                <span>Silhouette: Fluid Neckline</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 04: Resort Wrap Dress -->
+          <article class="archive-item">
+            <div class="archive-img-wrap">
+              <img src="assets/04 Resort Wrap Dress.webp" alt="Resort Wrap Dress in flowing textile" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='04 Resort Wrap Dress.webp'}">
+              <span class="archive-badge">Archive Resort</span>
+            </div>
+            <div class="archive-info">
+              <span class="archive-cat">Dresses / Bias Cut</span>
+              <h3>Resort Wrap Dress</h3>
+              <p>Cut on the bias to move harmoniously with the body. Wrinkle-resistant fiber memory makes it an ideal piece for destination travel.</p>
+              <div class="archive-spec">
+                <span>Fabric: Crepe-Twist Drape</span>
+                <span>Silhouette: Adjustable Wrap</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 05: Resort Easy Set -->
+          <article class="archive-item">
+            <div class="archive-img-wrap">
+              <img src="assets/05 Resort Easy Set.webp" alt="Resort Easy Set two-piece outfit" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='05 Resort Easy Set.webp'}">
+              <span class="archive-badge">Archive Leisure</span>
+            </div>
+            <div class="archive-info">
+              <span class="archive-cat">Co-ord / Everyday</span>
+              <h3>Resort Easy Set</h3>
+              <p>Minimalist two-piece set designed for effortless lounging and travel. Soft, breathable knit structure that packs flat and sheds creases instantly.</p>
+              <div class="archive-spec">
+                <span>Fabric: Sorona® Soft-Knit</span>
+                <span>Silhouette: Relaxed 2-Piece</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 06: Fall Knit Layer -->
+          <article class="archive-item">
+            <div class="archive-img-wrap">
+              <img src="assets/06 Fall Knit Layer.webp" alt="Fall Knit Layer textured sweater" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='06 Fall Knit Layer.webp'}">
+              <span class="archive-badge">Archive Knitwear</span>
+            </div>
+            <div class="archive-info">
+              <span class="archive-cat">Knitwear / Thermal Loft</span>
+              <h3>Fall Knit Layer</h3>
+              <p>Medium-gauge textured knit utilizing Aura thermal loft. Provides comforting insulating warmth without excessive weight or synthetic prickle.</p>
+              <div class="archive-spec">
+                <span>Fabric: Wool &amp; Aura Loft Knit</span>
+                <span>Silhouette: Relaxed Crew</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 07: Essential Sculpted Skirt -->
+          <article class="archive-item">
+            <div class="archive-img-wrap">
+              <img src="assets/07 Essential Sculpted Skirt.webp" alt="Essential Sculpted Skirt clean line" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='07 Essential Sculpted Skirt.webp'}">
+              <span class="archive-badge">Archive Tailoring</span>
+            </div>
+            <div class="archive-info">
+              <span class="archive-cat">Skirts / Minimal Line</span>
+              <h3>Essential Sculpted Skirt</h3>
+              <p>Engineered with controlled internal tension. Maintains its geometric line and structured drape whether seated or walking.</p>
+              <div class="archive-spec">
+                <span>Fabric: Double-Face Structure</span>
+                <span>Silhouette: Sculpted Column</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 08: Essential Layering Top -->
+          <article class="archive-item">
+            <div class="archive-img-wrap">
+              <img src="assets/08 Essential Layering Top.webp" alt="Essential Layering Top second-skin knit" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='08 Essential Layering Top.webp'}">
+              <span class="archive-badge">Archive Foundation</span>
+            </div>
+            <div class="archive-info">
+              <span class="archive-cat">Basics / Micro-Knit</span>
+              <h3>Essential Layering Top</h3>
+              <p>Second-skin micro-gauge jersey. Provides seamless comfort, temperature regulation, and high colorfastness over dozens of laundry cycles.</p>
+              <div class="archive-spec">
+                <span>Fabric: Micro-Fine Revive Jersey</span>
+                <span>Silhouette: Fitted Layer</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 09: Development System -->
+  <section id="research">
+    <div class="wrap research-grid">
+      <div>
+        <div class="eyebrow">09 — Development System</div>
+        <h2 class="serif">From fiber<br>to wardrobe.</h2>
+        <p>We develop collections through empirical material exploration, sample iterations, and rigorous wear evaluation to create enduring wardrobe anchors.</p>
+      </div>
+      <div class="research-steps">
+        <article class="research-step">
+          <b>01</b>
+          <div>
+            <h3>Material Selection</h3>
+            <p>We scrutinize raw fiber origins, yarn twist, and fabric weave architectures against our design goals, documenting all supplier certifications and ingredient disclosures.</p>
+          </div>
+        </article>
+        <article class="research-step">
+          <b>02</b>
+          <div>
+            <h3>Textile &amp; Structure Studies</h3>
+            <p>We analyze hand feel, weight, multidirectional recovery, and drape to select fabrics ideally aligned with the mechanical requirements of each garment type.</p>
+          </div>
+        </article>
+        <article class="research-step">
+          <b>03</b>
+          <div>
+            <h3>Pattern &amp; Sample Development</h3>
+            <p>Fabric behavior dictates pattern geometry. We cut and seam multiple iterations to refine how proportion, balance, and clean lines perform in real motion.</p>
+          </div>
+        </article>
+        <article class="research-step">
+          <b>04</b>
+          <div>
+            <h3>Wear Feedback &amp; Iteration</h3>
+            <p>Extended fitting sessions, wash resistance trials, and real-world everyday trials ensure each style delivers sustained comfort, low maintenance, and enduring elegance.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 10: Responsible Practice & Transparency -->
+  <section class="compliance" id="compliance">
+    <div class="wrap">
+      <div class="eyebrow">10 — Responsible Practice &amp; Transparency</div>
+      <h2 class="serif" style="font-size:36px; color:var(--paper); margin: 12px 0 20px;">Responsibility is an ongoing practice.</h2>
+      <p>SOROFIB considers responsible material choices an integral part of long-term product engineering, with careful attention to sourcing, product lifespan, and circular durability. Bio-based content, environmental attributes, and performance claims for Sorona® or other polymer platforms are evaluated strictly against verified supplier disclosures, third-party laboratory certifications, and applicable global labeling standards.</p>
+      <p>Environmental impacts vary across fiber blends, spinning methods, dyeing treatments, and consumer garment care. We do not make unsubstantiated marketing statements or speculative environmental guarantees. Product imagery and technical specifications are provided for brand transparency. Actual garment colors, fabric weights, and care instructions correspond to final production labeling.</p>
+    </div>
+  </section>
+
 </main>
-<main id="season" class="season-page" aria-label="Season collection page"><div class="season-hero"><div class="wrap"><div class="eyebrow">SOROFIB · SEASON 01</div><h1 class="serif">The Quiet<br>Form.</h1><p>This season begins with the space between body and fabric. Softness can hold its shape, and structure can feel light. Each piece leaves room to move.</p><a class="button" href="#season-story">Read the Season Story　↓</a></div></div><div class="wrap" id="season-story"><div class="season-detail"><div><div class="eyebrow">Season note</div><h2>Quiet silhouettes.<br>A considered hand feel.</h2></div><div><p>The Quiet Form is a study in restraint and the feeling of clothing on the body. Fluid lines, soft structure, and easy-to-layer proportions speak to a sense of ease in everyday life.</p><p>This season starts with how fabric behaves: drape shapes the silhouette, measured recovery supports movement, and details serve the act of wearing. Pieces are designed to work together across work, travel, and everyday life.</p><p>We value the possibility of returning to a garment again and again. Materials and finished-garment performance vary by style; fiber content and care details will be provided with product information.</p><a class="text-link" href="#contact">Ask About the Season　↗</a></div></div><div class="eyebrow" style="margin-bottom:20px">Season lookbook · Image placeholders</div><div class="season-look-grid"><div class="look-tile"><span>LOOK 01</span></div><div class="look-tile"><span>LOOK 02</span></div><div class="look-tile"><span>LOOK 03</span></div></div><div class="season-detail"><div><div class="eyebrow">Material in focus</div><h2>A wardrobe that starts with fabric.</h2></div><div><p>This season's material choices consider hand feel, structural stability, and ease of styling. We will share fiber content, care, and construction details for each product to help you understand how a garment is made and how to care for it.</p><p>Specific descriptions of fiber performance and environmental attributes should be verified against product-specific supplier documentation and official labeling.</p></div></div><a class="button" href="#collection" data-home-link>Back to Collections　↗</a></div></main>
-<section id="contact" class="contact"><div class="wrap contact-grid"><div><div class="eyebrow">Let’s begin a conversation</div><h2>SOROFIB</h2><p>For product, partnership, or material research inquiries, please get in touch.</p><span style="font-size:15px;color:#151612;display:inline-block;margin-top:6px">zt19851015@gmail.com</span></div><div class="contact-details"><div><h3>Studio</h3><p>3501 Santa Monica<br>Torrance, Los Angeles, CA</p></div><div><h3>Business</h3><p>Wholesale & press<br>zt19851015@gmail.com</p></div><div><h3>Address note</h3><p>Please contact us before visiting.</p></div></div></div></section>
-<footer><div class="footer"><a class="brand" href="#home">SOROFIB</a><div>© <span id="year"></span> SOROFIB STUDIO · WOMENSWEAR</div><div class="footer-links"><a href="#compliance">Privacy</a><a href="#compliance">Terms</a><a href="#compliance">Materials & claims</a></div></div></footer>
+
+<!-- SPA View: Dedicated Season Page -->
+<main id="season" class="season-page" aria-label="Season collection page">
+  <div class="season-hero">
+    <div class="wrap">
+      <div class="eyebrow">SOROFIB · SEASON 01</div>
+      <h1 class="serif">The Quiet<br>Form.</h1>
+      <p>This season begins with the space between body and fabric. Softness holds its shape, structure feels weightless, and every piece leaves room to live and move.</p>
+      <a class="button" href="#season-story">Read the Season Story ↓</a>
+    </div>
+  </div>
+  
+  <div class="wrap" id="season-story">
+    <div class="season-detail">
+      <div>
+        <div class="eyebrow">Season Note</div>
+        <h2>Quiet silhouettes.<br>A considered hand feel.</h2>
+      </div>
+      <div>
+        <p>The Quiet Form is a study in restraint and the intimate sensation of clothing on the skin. Fluid lines, soft structural tailoring, and easy-to-layer proportions speak to an understated sense of ease in everyday life.</p>
+        <p>This collection originated from observing fabric physics: how subtle drape defines a woman's silhouette, how measured elasticity supports unrestricted motion, and how minimal seams honor clean fabric geometry. Pieces are engineered to mix and harmonize across professional, travel, and personal settings.</p>
+        <p>We cherish the ritual of returning to a favorite garment season after season. Exact fiber blends and care instructions accompany every piece upon release.</p>
+        <a class="text-link" href="#contact">Inquire About Season Availability ↗</a>
+      </div>
+    </div>
+    
+    <div class="eyebrow" style="margin: 40px 0 20px;">Season Lookbook · Editorial Perspectives</div>
+    <div class="season-look-grid">
+      <div class="look-tile">
+        <img src="assets/Look 01 — The Quiet Form.webp" alt="Look 01 — The Quiet Form" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Look 01 — The Quiet Form.webp';}">
+        <span>LOOK 01 · THE QUIET FORM</span>
+      </div>
+      <div class="look-tile">
+        <img src="assets/Look 02 — A Study in Ease.webp" alt="Look 02 — A Study in Ease" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Look 02 — A Study in Ease.webp';}">
+        <span>LOOK 02 · A STUDY IN EASE</span>
+      </div>
+      <div class="look-tile">
+        <img src="assets/Look 03 — Fluid Foundation.webp" alt="Look 03 — Fluid Foundation" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Look 03 — Fluid Foundation.webp';}">
+        <span>LOOK 03 · FLUID FOUNDATION</span>
+      </div>
+    </div>
+    
+    <div class="season-detail">
+      <div>
+        <div class="eyebrow">Material in Focus</div>
+        <h2>A wardrobe that starts with fiber.</h2>
+      </div>
+      <div>
+        <p>This season's textile selection focuses on tactile softness, dimensional stability, and effortless care. By incorporating bio-based polymer blends, our pieces offer permanent wrinkle resistance and comfortable two-way stretch without reliance on heavy elastane.</p>
+        <p>Detailed fabric specifications and certified origin documentation will be provided alongside each product release.</p>
+      </div>
+    </div>
+    
+    <div style="margin: 50px 0 80px;">
+      <a class="button" href="#collection" data-home-link>Back to Collections ↗</a>
+    </div>
+  </div>
+</main>
+
+<!-- Section 11: Contact Information -->
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Let’s begin a conversation</div>
+      <h2>SOROFIB</h2>
+      <p>For product inquiries, partnership opportunities, or material research collaborations, please reach out directly.</p>
+      <span class="contact-email">zt19851015@gmail.com</span>
+    </div>
+    <div class="contact-details">
+      <div>
+        <h3>Studio</h3>
+        <p>3501 Santa Monica<br>Torrance, Los Angeles, CA</p>
+      </div>
+      <div>
+        <h3>Business</h3>
+        <p>Wholesale &amp; press<br>zt19851015@gmail.com</p>
+      </div>
+      <div>
+        <h3>Address Note</h3>
+        <p>Studio visits are available by appointment.</p>
+      </div>
+      <div>
+        <h3>Inquiries</h3>
+        <p>Material research &amp; design atelier.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer">
+    <a class="brand" href="#home">SOROFIB</a>
+    <div>© <span id="year"></span> SOROFIB STUDIO · WOMENSWEAR &amp; TEXTILE RESEARCH</div>
+    <div class="footer-links">
+      <a href="#compliance">Privacy &amp; Terms</a>
+      <a href="#compliance">Materials &amp; Claims</a>
+      <a href="#cookie-settings" id="openCookieSettings">Cookie Settings</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top button -->
 <button class="back-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ TOP</button>
+
+<!-- Cookie Consent Banner -->
+<aside class="cookie-banner" id="cookieBanner" aria-label="Cookie consent banner" role="dialog" aria-modal="false">
+  <div class="cookie-header">
+    <h4>Privacy &amp; Cookie Preferences</h4>
+    <span class="eyebrow">SOROFIB Studio</span>
+  </div>
+  <p>We use essential cookies to ensure our website functions securely and reliably. With your permission, we also utilize optional cookies to remember your display preferences, gather anonymous performance statistics, and present relevant textile content. You can manage your choices below or review our policy anytime in our footer.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn primary" id="cookieAcceptAll">Accept All</button>
+    <button class="cookie-btn" id="cookieRejectOptional">Reject Optional</button>
+    <button class="cookie-btn" id="cookieCustomize">Customize Preferences</button>
+  </div>
+</aside>
+
+<!-- Cookie Preferences Modal -->
+<div class="cookie-modal-backdrop" id="cookieModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
+  <div class="cookie-modal">
+    <h3 id="cookieModalTitle">Cookie Preferences</h3>
+    <p class="intro">Customize which cookies you permit us to use during your visit. Strictly necessary cookies cannot be disabled as they are required for basic site navigation and security.</p>
+    
+    <div class="cookie-groups">
+      <!-- 1. Necessary -->
+      <div class="cookie-group">
+        <div class="cookie-group-info">
+          <h5>1. Strictly Necessary</h5>
+          <p>Essential for basic site functionality, page routing, and remembering your consent preferences. These cannot be disabled.</p>
+        </div>
+        <label class="switch" aria-label="Strictly Necessary Cookies">
+          <input type="checkbox" id="cookieNecessary" checked disabled>
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- 2. Preferences -->
+      <div class="cookie-group">
+        <div class="cookie-group-info">
+          <h5>2. Functional &amp; Preferences</h5>
+          <p>Enables enhanced functionality such as persistent view preferences, font scaling, and route memory across sessions.</p>
+        </div>
+        <label class="switch" aria-label="Preferences Cookies">
+          <input type="checkbox" id="cookiePreferences">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- 3. Statistics -->
+      <div class="cookie-group">
+        <div class="cookie-group-info">
+          <h5>3. Statistics &amp; Performance</h5>
+          <p>Collects aggregated, anonymous telemetry to help us measure section engagement and improve site responsiveness.</p>
+        </div>
+        <label class="switch" aria-label="Statistics Cookies">
+          <input type="checkbox" id="cookieStatistics">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <!-- 4. Marketing -->
+      <div class="cookie-group">
+        <div class="cookie-group-info">
+          <h5>4. Marketing &amp; Media</h5>
+          <p>Allows measurement of editorial campaigns and enables high-resolution media embeds from third-party platforms.</p>
+        </div>
+        <label class="switch" aria-label="Marketing Cookies">
+          <input type="checkbox" id="cookieMarketing">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+    
+    <div class="cookie-modal-foot">
+      <button class="cookie-btn" id="cookieModalCancel">Cancel</button>
+      <button class="cookie-btn primary" id="cookieSaveCustom">Save My Preferences</button>
+    </div>
+  </div>
+</div>
+
 <script>
-  const nav=document.querySelector('.nav'), menu=document.querySelector('.menu-btn'), home=document.querySelector('.home-view'), season=document.querySelector('.season-page');
-  function renderRoute(){const isSeason=location.hash==='#season';home.classList.toggle('hide',isSeason);season.classList.toggle('show',isSeason);document.title=isSeason?'The Quiet Form — SOROFIB':'SOROFIB — Material, in Motion';if(isSeason){window.scrollTo(0,0)}else if(location.hash){setTimeout(()=>{const target=document.querySelector(location.hash);if(target)target.scrollIntoView({behavior:'smooth'})},30)}else{window.scrollTo(0,0)}}
-  document.querySelectorAll('[data-season-link]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();location.hash='season';nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
-  document.querySelectorAll('[data-home-link]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();location.hash='collection';}));
-  window.addEventListener('hashchange',renderRoute);renderRoute();document.getElementById('year').textContent=new Date().getFullYear();
-  menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
-  nav.querySelectorAll('a:not([data-season-link])').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
-  document.querySelector('[data-lang]').addEventListener('click',e=>{e.preventDefault();alert('This website is presented in English.');});
+  // Navigation & SPA Hash Routing
+  const nav = document.querySelector('.nav');
+  const menuBtn = document.querySelector('.menu-btn');
+  const homeView = document.querySelector('.home-view');
+  const seasonPage = document.querySelector('.season-page');
+  
+  function renderRoute() {
+    const isSeason = location.hash === '#season';
+    homeView.classList.toggle('hide', isSeason);
+    seasonPage.classList.toggle('show', isSeason);
+    document.title = isSeason ? 'The Quiet Form — SOROFIB' : 'SOROFIB — Material, in Motion | Textile & Womenswear Studio';
+    
+    if (isSeason) {
+      window.scrollTo(0, 0);
+    } else if (location.hash && location.hash !== '#home') {
+      setTimeout(() => {
+        const target = document.querySelector(location.hash);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }, 40);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }
+  
+  document.querySelectorAll('[data-season-link]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      location.hash = 'season';
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+  
+  document.querySelectorAll('[data-home-link]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      location.hash = 'collection';
+    });
+  });
+  
+  window.addEventListener('hashchange', renderRoute);
+  renderRoute();
+  
+  document.getElementById('year').textContent = new Date().getFullYear();
+  
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  
+  nav.querySelectorAll('a:not([data-season-link])').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+  
+  document.querySelector('[data-lang]').addEventListener('click', e => {
+    e.preventDefault();
+    alert('This website is presented in English.');
+  });
+
+  // Interactive Atelier Card Tap for Mobile/Touch devices
+  document.querySelectorAll('.atelier-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('revealed');
+    });
+  });
+
+  // Cookie Consent System
+  const STORAGE_KEY = 'sorofib_cookie_consent_v1';
+  const cookieBanner = document.getElementById('cookieBanner');
+  const cookieModal = document.getElementById('cookieModalBackdrop');
+  const btnAcceptAll = document.getElementById('cookieAcceptAll');
+  const btnRejectOptional = document.getElementById('cookieRejectOptional');
+  const btnCustomize = document.getElementById('cookieCustomize');
+  const btnModalCancel = document.getElementById('cookieModalCancel');
+  const btnSaveCustom = document.getElementById('cookieSaveCustom');
+  const linkOpenSettings = document.getElementById('openCookieSettings');
+  
+  const chkPreferences = document.getElementById('cookiePreferences');
+  const chkStatistics = document.getElementById('cookieStatistics');
+  const chkMarketing = document.getElementById('cookieMarketing');
+
+  function getSavedConsent() {
+    try {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      return saved ? JSON.parse(saved) : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function saveConsent(consent) {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({
+        necessary: true,
+        preferences: Boolean(consent.preferences),
+        statistics: Boolean(consent.statistics),
+        marketing: Boolean(consent.marketing),
+        timestamp: new Date().toISOString()
+      }));
+    } catch (e) {
+      console.warn('Unable to persist cookie consent to localStorage', e);
+    }
+    cookieBanner.classList.remove('show');
+    cookieModal.classList.remove('show');
+    applyConsent(consent);
+  }
+
+  function applyConsent(consent) {
+    window.dispatchEvent(new CustomEvent('sorofibCookieConsent', { detail: consent }));
+  }
+
+  function openModal() {
+    const current = getSavedConsent() || { necessary: true, preferences: false, statistics: false, marketing: false };
+    chkPreferences.checked = Boolean(current.preferences);
+    chkStatistics.checked = Boolean(current.statistics);
+    chkMarketing.checked = Boolean(current.marketing);
+    cookieModal.classList.add('show');
+  }
+
+  function closeModal() {
+    cookieModal.classList.remove('show');
+  }
+
+  // Event Listeners
+  btnAcceptAll.addEventListener('click', () => {
+    saveConsent({ necessary: true, preferences: true, statistics: true, marketing: true });
+  });
+
+  btnRejectOptional.addEventListener('click', () => {
+    saveConsent({ necessary: true, preferences: false, statistics: false, marketing: false });
+  });
+
+  btnCustomize.addEventListener('click', openModal);
+  btnModalCancel.addEventListener('click', closeModal);
+  
+  btnSaveCustom.addEventListener('click', () => {
+    saveConsent({
+      necessary: true,
+      preferences: chkPreferences.checked,
+      statistics: chkStatistics.checked,
+      marketing: chkMarketing.checked
+    });
+  });
+
+  linkOpenSettings.addEventListener('click', e => {
+    e.preventDefault();
+    openModal();
+  });
+
+  cookieModal.addEventListener('click', e => {
+    if (e.target === cookieModal) closeModal();
+  });
+
+  // Check consent on entry
+  const existingConsent = getSavedConsent();
+  if (!existingConsent) {
+    setTimeout(() => {
+      cookieBanner.classList.add('show');
+    }, 600);
+  } else {
+    applyConsent(existingConsent);
+  }
 </script>
-<!-- Suggested assets to upload under /assets/: hero-womenswear-editorial.jpg, sorofib-social-preview.jpg, fiber-structure-study.jpg, collection-look-01.jpg, collection-look-02.jpg, season-hero.jpg, season-look-01.jpg, season-look-02.jpg, season-look-03.jpg, mia-zhang-portrait.jpg, elias-thorn-portrait.jpg, isabella-lazatti-portrait.jpg, julian-thorn-portrait.jpg, elena-rossi-portrait.jpg. Optional video: season-film.mp4 + season-film-poster.jpg. -->
+
 </body>
 </html>
-
-
-
-
