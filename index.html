@@ -703,7 +703,393 @@
       display: block;
     }
     
-    /* Section 06: Collections */
+    /* ===================================================
+       Section 07: Seasonal Editorial Lookbook Series
+       =================================================== */
+    .lookbook-series {
+      display: flex;
+      flex-direction: column;
+      gap: 90px;
+      margin-top: 50px;
+    }
+    
+    .editorial-showcase {
+      position: relative;
+      border-top: 1px solid var(--line);
+      padding-top: 48px;
+    }
+    .editorial-showcase-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+      margin-bottom: 32px;
+    }
+    .editorial-showcase-header .season-tag {
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+      display: block;
+    }
+    .editorial-showcase-header h3 {
+      font: clamp(34px, 4.5vw, 62px)/0.96 var(--serif);
+      margin: 0;
+      color: #fff;
+    }
+    .editorial-showcase-header p {
+      max-width: 480px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
+
+    /* Asymmetric Composition 01: Dominant Left + Stacked Right (Spring/Summer) */
+    .showcase-layout-alpha {
+      display: grid;
+      grid-template-columns: 1.25fr 0.95fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    
+    /* Asymmetric Composition 02: Inverted Stacked Left + Dominant Right (Autumn/Winter) */
+    .showcase-layout-beta {
+      display: grid;
+      grid-template-columns: 0.95fr 1.25fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    /* Asymmetric Composition 03: Triptych Editorial Flow (Contemporary Essentials) */
+    .showcase-layout-gamma {
+      display: grid;
+      grid-template-columns: 1.2fr 0.9fr 0.9fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    /* Asymmetric Composition 04: Panoramic Split Feature (Signature Fabric) */
+    .showcase-layout-delta {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    /* Editorial Image Frames */
+    .editorial-frame {
+      position: relative;
+      overflow: hidden;
+      background: #181916;
+      border: 1px solid var(--line);
+      min-height: 380px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .editorial-frame.heroic {
+      min-height: 580px;
+    }
+    .editorial-frame.medium {
+      min-height: 280px;
+    }
+    .editorial-frame img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .editorial-frame:hover img {
+      transform: scale(1.035);
+    }
+    
+    .editorial-overlay-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(14, 15, 12, 0.94) 0%, rgba(14, 15, 12, 0.4) 45%, transparent 75%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .editorial-frame-meta {
+      position: relative;
+      z-index: 2;
+      padding: 30px 28px;
+    }
+    .editorial-frame-meta .badge {
+      display: inline-block;
+      font-size: 9.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .editorial-frame-meta h4 {
+      font: clamp(24px, 3vw, 36px)/1.05 var(--serif);
+      color: #fff;
+      margin: 0 0 10px;
+    }
+    .editorial-frame-meta p {
+      font-size: 13px;
+      color: #ded8c6;
+      line-height: 1.6;
+      max-width: 440px;
+      margin: 0 0 16px;
+    }
+
+    /* Side Stack Column */
+    .editorial-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .editorial-split-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    /* Editorial Details & Material Pill Box */
+    .editorial-pill-box {
+      border: 1px solid var(--line);
+      background: rgba(22, 23, 20, 0.75);
+      padding: 16px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .editorial-pill-box strong {
+      color: var(--paper);
+      font-weight: 500;
+    }
+    .editorial-palette {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .color-chip {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    /* Editorial Action Buttons */
+    .editorial-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--paper);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      padding: 10px 18px;
+      background: rgba(16, 17, 15, 0.65);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      transition: background 0.3s, border-color 0.3s, color 0.3s;
+      width: fit-content;
+      text-decoration: none;
+    }
+    .editorial-action-btn:hover {
+      background: var(--paper);
+      color: var(--ink);
+      border-color: var(--paper);
+    }
+
+    /* Complete Fashion Lookbook Editorial Components */
+    .lookbook-panorama {
+      position: relative;
+      overflow: hidden;
+      min-height: 540px;
+      border: 1px solid var(--line);
+      background: #141512;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 28px 0;
+    }
+    .lookbook-panorama img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .lookbook-panorama:hover img {
+      transform: scale(1.02);
+    }
+    .lookbook-panorama-meta {
+      position: relative;
+      z-index: 2;
+      padding: 44px 40px;
+      max-width: 680px;
+    }
+    .lookbook-panorama-meta h3 {
+      font: clamp(32px, 4.5vw, 56px)/1 var(--serif);
+      margin: 8px 0 14px;
+      color: #fff;
+    }
+    .lookbook-panorama-meta p {
+      font-size: 14px;
+      line-height: 1.65;
+      color: #ded8c6;
+      margin: 0;
+    }
+
+    .garment-look-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 32px 0 44px;
+    }
+    .garment-look-card {
+      background: #151613;
+      border: 1px solid var(--line);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .garment-look-card:hover {
+      border-color: rgba(255, 255, 255, 0.28);
+      transform: translateY(-3px);
+    }
+    .garment-look-visual {
+      position: relative;
+      aspect-ratio: 0.82;
+      overflow: hidden;
+      background: #1c1d19;
+    }
+    .garment-look-visual img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .garment-look-card:hover .garment-look-visual img {
+      transform: scale(1.04);
+    }
+    .garment-look-body {
+      padding: 24px 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .garment-look-tag {
+      font-size: 9.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    .garment-look-body h4 {
+      font: 22px/1.15 var(--serif);
+      color: #fff;
+      margin: 0 0 10px;
+    }
+    .garment-look-body p {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.65;
+      margin: 0 0 16px;
+      flex-grow: 1;
+    }
+    .garment-look-specs {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 14px;
+      font-size: 11px;
+      color: #b3b0a6;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .garment-look-specs span strong {
+      color: var(--paper);
+    }
+
+    .lookbook-quote-banner {
+      padding: 56px 44px;
+      background: #121310;
+      border: 1px solid var(--line);
+      margin: 48px 0;
+      text-align: center;
+    }
+    .lookbook-quote-banner blockquote {
+      font: italic clamp(20px, 2.8vw, 32px)/1.4 var(--serif);
+      color: #ded8c6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .lookbook-quote-banner cite {
+      display: block;
+      margin-top: 16px;
+      font-size: 10.5px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .textile-macro-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 36px 0;
+      align-items: stretch;
+    }
+    .macro-textile-info {
+      background: #141512;
+      border: 1px solid var(--line);
+      padding: 38px 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .macro-textile-info h4 {
+      font: 28px/1.1 var(--serif);
+      margin: 10px 0 14px;
+      color: #fff;
+    }
+    .macro-textile-info p {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0 0 20px;
+    }
+    .textile-spec-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 11.5px;
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+    }
+    .textile-spec-list div {
+      display: flex;
+      justify-content: space-between;
+      color: var(--muted);
+    }
+    .textile-spec-list div strong {
+      color: var(--paper);
+    }
+
+    /* Legacy collection-cards compatibility */
     .collection-cards {
       display: grid;
       grid-template-columns: 1.15fr 0.85fr;
@@ -1497,6 +1883,21 @@
       .atelier-grid { grid-template-columns: 1fr; }
       .collection-cards { grid-template-columns: 1fr; gap: 16px; }
       .collection-card, .collection-card:nth-child(2) { min-height: 460px; margin-top: 0; }
+      .lookbook-series { gap: 60px; }
+      .editorial-showcase-header { flex-direction: column; align-items: flex-start; gap: 14px; }
+      .showcase-layout-alpha,
+      .showcase-layout-beta,
+      .showcase-layout-gamma,
+      .showcase-layout-delta {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+      .editorial-frame.heroic { min-height: 480px; }
+      .garment-look-grid { grid-template-columns: 1fr; }
+      .textile-macro-split { grid-template-columns: 1fr; }
+      .lookbook-panorama { min-height: 400px; }
+      .lookbook-panorama-meta { padding: 28px 24px; }
+      .lookbook-quote-banner { padding: 40px 24px; }
       .archive-editorial-grid { grid-template-columns: 1fr; gap: 20px; }
       .archive-grid { grid-template-columns: 1fr; gap: 20px; }
       .season-banner { align-items: flex-start; flex-direction: column; }
@@ -1519,6 +1920,10 @@
       .cookie-modal { padding: 24px 20px; }
     }
     @media(max-width: 480px) {
+      .editorial-frame.heroic { min-height: 380px; }
+      .editorial-split-duo { grid-template-columns: 1fr; }
+      .editorial-frame-meta { padding: 20px 16px; }
+      .editorial-pill-box { flex-direction: column; align-items: flex-start; }
       .story-gallery { grid-template-columns: 1fr; }
       .story-pillars { grid-template-columns: 1fr; gap: 24px; }
       .person, .person.mia { grid-template-columns: 105px 1fr; gap: 14px; }
@@ -2328,6 +2733,468 @@
         <span>LOOK 03 · FLUID FOUNDATION</span>
       </div>
     </div>
+
+    <!-- EXPANDED EDITORIAL LOOKBOOK: SERIES OF SEASONAL DESIGN COLLECTIONS -->
+    <div class="season-lookbook-intro" style="margin-top: 80px; padding-top: 50px; border-top: 1px solid var(--line);">
+      <div class="section-head" style="margin-bottom: 30px;">
+        <div>
+          <div class="eyebrow">Curated Lookbook Series · Seasonal Editions</div>
+          <h2 class="serif" style="font-size: clamp(34px, 4.5vw, 60px);">A Sequence of Seasonal Forms</h2>
+        </div>
+        <p style="max-width: 500px;">Explore our ongoing seasonal chapters. Each collection investigates unique material thresholds—from warm-weather open-weave breathability to winter architectural insulation.</p>
+      </div>
+    </div>
+
+    <div class="lookbook-series" style="margin-bottom: 90px;">
+      
+      <!-- Chapter 01: Spring / Summer Series -->
+      <article class="editorial-showcase">
+        <div class="editorial-showcase-header">
+          <div>
+            <span class="season-tag">Chapter 01 / Spring · Summer Collection</span>
+            <h3 class="serif">The Quiet Form &amp; Open Atmosphere</h3>
+          </div>
+          <p>A study in fluid restraint and effortless air. Designed for warm climates and transitional days, this series investigates lightweight bio-based polymers and open-weave drape. Pieces float away from the skin while maintaining sharp, intentional lines.</p>
+        </div>
+
+        <!-- Full-Width Editorial Panorama -->
+        <div class="lookbook-panorama">
+          <img src="assets/season-ss-panorama.jpg" alt="Spring Summer Collection Panorama — The Quiet Form in Natural Daylight" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='season-ss-panorama.jpg';}">
+          <div class="editorial-overlay-gradient"></div>
+          <div class="lookbook-panorama-meta">
+            <span class="season-tag" style="color: var(--accent);">Editorial Campaign · Chapter 01 Panorama</span>
+            <h3>Liquid Neutrality</h3>
+            <p>Relaxed monochrome separates tailored with bio-polymer yarn memory for zero-crease elegance throughout long itineraries and warm-weather environments.</p>
+          </div>
+        </div>
+
+        <!-- Garment Lookbook Showcase Grid (3 Outfits) -->
+        <div class="garment-look-grid">
+          <!-- Look 01-A -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/season-ss-drape-blouse.jpg" alt="Spring Drape Blouse in silky fluid fabric" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='season-ss-drape-blouse.jpg';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 01-A · Fluid Top</span>
+              <h4>Spring Drape Blouse</h4>
+              <p>High-twist Bio-Luxe silk-touch yarn. Features a soft cowl neckline and breathable weave that resists body heat entrapment while maintaining a delicate matte sheen.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>60% Bio-Polymer, 40% Tencel™</strong></span>
+                <span>Silhouette: <strong>Relaxed Cowl Neckline</strong></span>
+                <span>Care: <strong>Machine Wash Gentle · Zero Ironing</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 01-B -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/season-ss-fluid-trouser.jpg" alt="Spring Fluid Trouser silhouette" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='season-ss-fluid-trouser.jpg';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 01-B · Tailored Base</span>
+              <h4>Spring Fluid Trouser</h4>
+              <p>Engineered with Agile multi-stretch weave. High-rise drape with knife-sharp center pleats that remain crisp after hours of transit and seated work.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>68% Sorona® Bio-Polymer, 32% Cotton</strong></span>
+                <span>Silhouette: <strong>Wide-Leg High Rise</strong></span>
+                <span>Mechanical Flex: <strong>4-Way Multi-Directional Stretch</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 01-C -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/Atelier 04 output.webp" alt="Relaxed Tailored Daywear Separates on model" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Atelier 04 output.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 01-C · Relaxed Daywear</span>
+              <h4>Relaxed Tailored Daywear</h4>
+              <p>Contemporary fluid daywear tailored with bio-polymer yarn memory for zero-crease elegance in warm daylight environments and daily motion.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>65% Bio-Polymer, 35% Cotton Twill</strong></span>
+                <span>Silhouette: <strong>Relaxed Open-Collar Daywear Separates</strong></span>
+                <span>Shape Recovery: <strong>98% Elastic Reset Post-Extension</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material Innovation & Macro Study -->
+        <div class="textile-macro-split">
+          <div class="editorial-frame medium" style="min-height: 320px;">
+            <img src="assets/Studio Fitting.webp" alt="Studio fitting garment drape study" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Studio Fitting.webp';}">
+            <div class="editorial-overlay-gradient"></div>
+            <div class="editorial-frame-meta" style="padding: 24px;">
+              <span class="badge">Atelier Study · Garment Drape</span>
+              <h4 style="font-size: 20px; margin: 0 0 6px;">Studio Fitting &amp; Drape</h4>
+              <span style="font-size: 12px; color: var(--muted);">Clean Proportions &amp; Fluid Fall</span>
+            </div>
+          </div>
+          <div class="macro-textile-info">
+            <span class="season-tag">Material Innovation · Bio-Luxe™ Weave</span>
+            <h4>High-Twist Open Permeability</h4>
+            <p>By spinning bio-derived PDO polymer filaments under calibrated high twist, the microscopic space between yarns remains open during motion. This allows rapid air displacement and moisture dispersal, eliminating synthetic cling.</p>
+            <div class="textile-spec-list">
+              <div><span>Yarn Density</span><strong>280 Threads / Inch</strong></div>
+              <div><span>Stretch Elasticity</span><strong>24% Mechanical Spring</strong></div>
+              <div><span>Plant-Based Content</span><strong>37% USDA Certified Biobased</strong></div>
+              <div><span>Surface Handfeel</span><strong>Matte Dry Peachskin</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Palette & Direction -->
+        <div class="editorial-pill-box">
+          <div>
+            <strong>Seasonal Color Direction:</strong> Raw Sand, Alabaster &amp; Desert Bone
+          </div>
+          <div class="editorial-palette">
+            <span>Palette:</span>
+            <span class="color-chip" style="background:#e8dfcc;" title="Raw Sand"></span>
+            <span class="color-chip" style="background:#f4f0e6;" title="Alabaster"></span>
+            <span class="color-chip" style="background:#b8b09f;" title="Desert Bone"></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 02: Autumn / Winter Series -->
+      <article class="editorial-showcase">
+        <div class="editorial-showcase-header">
+          <div>
+            <span class="season-tag">Chapter 02 / Autumn · Winter Collection</span>
+            <h3 class="serif">A Study in Ease &amp; Architectural Warmth</h3>
+          </div>
+          <p>Structured outerwear and protective layering re-imagined with weightless warmth. Incorporating Aura thermal loft fibers, winter tailoring maintains crisp angular silhouettes without the stiff, burdensome bulk of traditional cold-weather garments.</p>
+        </div>
+
+        <!-- Full-Width Editorial Panorama -->
+        <div class="lookbook-panorama">
+          <img src="assets/Atelier 05 output.webp" alt="Autumn Winter Collection Panorama — Sorona Tailored Trench Coat on Model in Nature" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Atelier 05 output.webp';}">
+          <div class="editorial-overlay-gradient"></div>
+          <div class="lookbook-panorama-meta">
+            <span class="season-tag" style="color: var(--accent);">Editorial Campaign · Chapter 02 Panorama</span>
+            <h3>Architectural Warmth</h3>
+            <p>Enveloping outerwear and tailored layers designed to transition seamlessly between formal demands and personal downtime in colder natural and urban environments.</p>
+          </div>
+        </div>
+
+        <!-- Garment Lookbook Showcase Grid (3 Outfits) -->
+        <div class="garment-look-grid">
+          <!-- Look 02-A -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/01 Winter Tailored Coat.webp" alt="Winter Tailored Coat in structured fabric" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='01 Winter Tailored Coat.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 02-A · Sculpted Outerwear</span>
+              <h4>Winter Tailored Overcoat</h4>
+              <p>Profile weave wool blend delivering sculpted shoulder architecture with weightless thermal loft and permanent lapel crease retention.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>45% Bio-Aura, 55% Merino Wool</strong></span>
+                <span>Silhouette: <strong>Double-Breasted Architectural Longline</strong></span>
+                <span>Thermal Retention: <strong>+35% Insulation vs. Standard Wool</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 02-B -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/06 Fall Knit Layer.webp" alt="Fall Knit Layer textured sweater" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='06 Fall Knit Layer.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 02-B · Thermal Knit</span>
+              <h4>Thermal Rib Knit Pullover</h4>
+              <p>Aura hollow-core yarn structure providing plush softness and breathable heat retention with zero prickle across sensitive necklines.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>70% Sorona® Aura, 30% Fine Cashmere</strong></span>
+                <span>Silhouette: <strong>Boxy Raglan Mock-Neck</strong></span>
+                <span>Knit Gauge: <strong>7-Gauge Heavy English Rib</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 02-C -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/Atelier 02 output.webp" alt="Structural silhouette runway cape suit on model" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Atelier 02 output.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 02-C · Architectural Cape</span>
+              <h4>Structural Silhouette Cape Suit</h4>
+              <p>Sculptural runway cape suit cut from heavy profile-weave wool blend. Delivers sharp architectural lines, fluid motion, and comfortable thermal insulation.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>60% Bio-Aura, 40% Virgin Wool</strong></span>
+                <span>Silhouette: <strong>Structural Silhouette Cape &amp; Trouser</strong></span>
+                <span>Fabric Weight: <strong>380 g/m² Heavy Structural Weave</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material Innovation & Macro Study -->
+        <div class="textile-macro-split">
+          <div class="editorial-frame medium" style="min-height: 320px;">
+            <img src="assets/Textile Drape Study.webp" alt="Textile Architecture and Drape Study" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Textile Drape Study.webp';}">
+            <div class="editorial-overlay-gradient"></div>
+            <div class="editorial-frame-meta" style="padding: 24px;">
+              <span class="badge">Atelier Study · Heavy Weave</span>
+              <h4 style="font-size: 20px; margin: 0 0 6px;">Heavy Twill Architecture</h4>
+              <span style="font-size: 12px; color: var(--muted);">Low-Gram Weight Insulation Architecture</span>
+            </div>
+          </div>
+          <div class="macro-textile-info">
+            <span class="season-tag">Material Innovation · Aura™ Thermal Loft</span>
+            <h4>Hollow-Core Weightless Twill</h4>
+            <p>Engineered using trilobal hollow fibers that capture warm microscopic air pockets. The fabric achieves substantial outerwear drape and thermal performance at half the weight of traditional virgin wool.</p>
+            <div class="textile-spec-list">
+              <div><span>Fiber Cross-Section</span><strong>Tri-Lobe Hollow Filament</strong></div>
+              <div><span>Thermal Clo Value</span><strong>1.85 Clo / mm</strong></div>
+              <div><span>Wrinkle Recovery</span><strong>99.4% Instantaneous Rebound</strong></div>
+              <div><span>Drape Coefficient</span><strong>0.41 Structural Cascade</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Palette & Direction -->
+        <div class="editorial-pill-box">
+          <div>
+            <strong>Seasonal Color Direction:</strong> Deep Charcoal, Earth Umber &amp; Slate Heather
+          </div>
+          <div class="editorial-palette">
+            <span>Palette:</span>
+            <span class="color-chip" style="background:#232420;" title="Deep Charcoal"></span>
+            <span class="color-chip" style="background:#54463a;" title="Earth Umber"></span>
+            <span class="color-chip" style="background:#787970;" title="Slate Heather"></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Mid-Lookbook Editorial Statement -->
+      <div class="lookbook-quote-banner">
+        <blockquote>“When a woman moves, clothing should move with her—never against her. By starting our development at the molecular fiber level rather than the sketch pad, every garment achieves an effortless balance between structural geometry and unconstrained ease.”</blockquote>
+        <cite>— SOROFIB Atelier &amp; Material Science Workbench, Los Angeles</cite>
+      </div>
+
+      <!-- Chapter 03: Contemporary Essentials -->
+      <article class="editorial-showcase">
+        <div class="editorial-showcase-header">
+          <div>
+            <span class="season-tag">Chapter 03 / Contemporary Essentials</span>
+            <h3 class="serif">Permanent Motion &amp; Wardrobe Anchors</h3>
+          </div>
+          <p>The foundation of modern daily dressing. Pieces crafted with continuous elastic memory that resist bagging at joints, recover from luggage packing immediately, and maintain crisp geometry from morning transit to evening engagements.</p>
+        </div>
+
+        <!-- Garment Lookbook Showcase Grid (3 Outfits) -->
+        <div class="garment-look-grid">
+          <!-- Look 03-A -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/02 Spring Fluid Trouser.webp" alt="White Tailored Commute Set in high-recovery stretch weave" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='02 Spring Fluid Trouser.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 03-A · Kinetic Commute</span>
+              <h4>White Tailored Commute Set</h4>
+              <p>Full-stride single-breasted blazer and fluid wide-leg trouser set engineered with Agile multi-stretch weave. Maintains crisp geometry and resists knee bagging through long transit days.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>68% Sorona® Agile, 32% Cotton</strong></span>
+                <span>Silhouette: <strong>Relaxed Single-Breasted Blazer &amp; Wide Pant</strong></span>
+                <span>Shape Reset: <strong>Instant Elastic Zero-Deformation</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 03-B -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/07 Essential Sculpted Skirt.webp" alt="Essential Sculpted Skirt in urban setting" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='07 Essential Sculpted Skirt.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 03-B · Sculptural Wrap</span>
+              <h4>Sculpted Asymmetric Skirt</h4>
+              <p>Double-face structural weave in vibrant vermilion. Holds intentional geometric folds whether walking or seated, shedding sit-creases naturally.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>65% Bio-Based Polymer, 35% Lyocell</strong></span>
+                <span>Silhouette: <strong>Asymmetric Architectural Fold</strong></span>
+                <span>Colorfastness: <strong>Grade 5 Non-Fading Color Lock</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 03-C -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/08 Essential Layering Top.webp" alt="Essential Layering Tops color trio" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='08 Essential Layering Top.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 03-C · Second-Skin Knit</span>
+              <h4>Micro-Gauge Revive Tops</h4>
+              <p>Featherweight layering essentials offered in calibrated neutral tones. Incredibly soft against bare skin, pill-resistant, and enduring across washings.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>92% Bio-Revive Jersey, 8% Elastane</strong></span>
+                <span>Silhouette: <strong>Fitted Crew &amp; Relaxed Boatneck</strong></span>
+                <span>Wash Longevity: <strong>100+ Cycles Without Fiber Pilling</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Construction & Seam Study -->
+        <div class="textile-macro-split">
+          <div class="editorial-frame medium" style="min-height: 320px;">
+            <img src="assets/003 Articulated Performance Shell.webp" alt="Articulated garment construction detail" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='003 Articulated Performance Shell.webp';}">
+            <div class="editorial-overlay-gradient"></div>
+            <div class="editorial-frame-meta" style="padding: 24px;">
+              <span class="badge">Atelier Mechanics · Construction</span>
+              <h4 style="font-size: 20px; margin: 0 0 6px;">Seam Engineering &amp; Reinforcement</h4>
+              <span style="font-size: 12px; color: var(--muted);">Low-Profile Biomechanical Tension Relief</span>
+            </div>
+          </div>
+          <div class="macro-textile-info">
+            <span class="season-tag">Garment Engineering · Seam Mechanics</span>
+            <h4>Articulated Strain Redistribution</h4>
+            <p>Every junction is mapped along natural biomechanical lines of tension. Low-profile flatlock seaming and reinforced strain nodes ensure the garment stretches uniformly under physical stress without seam blowout or contour distortion.</p>
+            <div class="textile-spec-list">
+              <div><span>Seam Tensile Strength</span><strong>420N Bi-Axial Capacity</strong></div>
+              <div><span>Stitch Architecture</span><strong>4-Needle Articulated Micro-Flatlock</strong></div>
+              <div><span>Flex Endurance</span><strong>50,000 Repeated Flex Cycles</strong></div>
+              <div><span>Abrasion Rating</span><strong>ASTM D4966 Grade 4.5 Heavy Duty</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Palette & Direction -->
+        <div class="editorial-pill-box">
+          <div>
+            <strong>Seasonal Color Direction:</strong> Obsidian Black, Sculpted Vermilion &amp; Warm Taupe
+          </div>
+          <div class="editorial-palette">
+            <span>Palette:</span>
+            <span class="color-chip" style="background:#131411;" title="Obsidian Black"></span>
+            <span class="color-chip" style="background:#c94c3d;" title="Sculpted Vermilion"></span>
+            <span class="color-chip" style="background:#9e9282;" title="Warm Taupe"></span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Chapter 04: Signature Fabric & Resort -->
+      <article class="editorial-showcase">
+        <div class="editorial-showcase-header">
+          <div>
+            <span class="season-tag">Chapter 04 / Signature Fabric Collection</span>
+            <h3 class="serif">Tactile Articulation &amp; Bias Geometry</h3>
+          </div>
+          <p>Where material innovation translates into expressive evening and resort silhouettes. Weaving structures juxtapose refined botanical luster with high-performance polymer resilience, resulting in fluid garments that move like water yet maintain crisp structural edges.</p>
+        </div>
+
+        <!-- Full-Width Editorial Panorama -->
+        <div class="lookbook-panorama">
+          <img src="assets/04 Resort Wrap Dress.webp" alt="Resort Wrap Dress in flowing textile" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='04 Resort Wrap Dress.webp';}">
+          <div class="editorial-overlay-gradient"></div>
+          <div class="lookbook-panorama-meta">
+            <span class="season-tag" style="color: var(--accent);">Editorial Campaign · Look 04</span>
+            <h3>Crepe-Twist Drape</h3>
+            <p>Cut on the bias to conform harmoniously to the human form. Wrinkle-resistant fiber memory ensures effortless travel packing and enduring grace.</p>
+          </div>
+        </div>
+
+        <!-- Garment Lookbook Showcase Grid (3 Outfits) -->
+        <div class="garment-look-grid">
+          <!-- Look 04-A -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/03 Spring Drape Blouse.webp" alt="Bias-Cut Silk Crepe Blouse in architectural shadowplay" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='03 Spring Drape Blouse.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 04-A · Fluid Bias</span>
+              <h4>Bias-Cut Silk Crepe Blouse</h4>
+              <p>Cut on the bias to follow body contours naturally with zero tension points. High-twist crepe yarn creates delicate diagonal drape folds with an understated matte sheen.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>100% High-Twist Sorona® Bio-Crepe</strong></span>
+                <span>Silhouette: <strong>Bias-Cut Draped Neckline</strong></span>
+                <span>Drape Coefficient: <strong>0.36 Ultra-Fluid Cascade</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 04-B -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/05 Resort Easy Set.webp" alt="Resort Easy Set in botanical fluid textile" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='05 Resort Easy Set.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 04-B · Botanical Co-ord</span>
+              <h4>Resort Botanical Two-Piece Set</h4>
+              <p>Matching lounge-to-dinner coordinates featuring custom botanical motifs printed on breathable, ultra-supple high-twist yarn.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>58% Sorona® Bio-Luxe, 42% Rayon</strong></span>
+                <span>Silhouette: <strong>Camp-Collar Shirt &amp; Relaxed Wide Pant</strong></span>
+                <span>Air Permeability: <strong>185 cm³/cm²/sec High Airflow</strong></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Look 04-C -->
+          <div class="garment-look-card">
+            <div class="garment-look-visual">
+              <img src="assets/Atelier 03 output.webp" alt="Dimensional Weave Evening Gown on model" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='Atelier 03 output.webp';}">
+            </div>
+            <div class="garment-look-body">
+              <span class="garment-look-tag">Look 04-C · Structural Silhouette</span>
+              <h4>Dimensional Weave Evening Gown</h4>
+              <p>Full-length bias-cut evening gown engineered with dimensional fiber weave logic. Natural cascade drape conforms seamlessly to bodily motion with an understated luminous finish.</p>
+              <div class="garment-look-specs">
+                <span>Composition: <strong>75% Bio-Polymer Crepe, 25% Silk Twill</strong></span>
+                <span>Silhouette: <strong>Bias Floor-Length Column</strong></span>
+                <span>Surface Hand: <strong>Weightless Fluid Luster</strong></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Material Innovation & Macro Study -->
+        <div class="textile-macro-split">
+          <div class="editorial-frame medium" style="min-height: 320px;">
+            <img src="assets/004 Bio-Gold Structural Weave.webp" alt="Bio-Gold structural weave textile close-up" onerror="if(!this.dataset.fb){this.dataset.fb='1';this.src='004 Bio-Gold Structural Weave.webp';}">
+            <div class="editorial-overlay-gradient"></div>
+            <div class="editorial-frame-meta" style="padding: 24px;">
+              <span class="badge">Textile Architecture · Atelier Macro</span>
+              <h4 style="font-size: 20px; margin: 0 0 6px;">Bio-Gold Structural Matrix</h4>
+              <span style="font-size: 12px; color: var(--muted);">Metallic Filaments with Bio-Derived Polymers</span>
+            </div>
+          </div>
+          <div class="macro-textile-info">
+            <span class="season-tag">Textile Architecture · Atelier Macro</span>
+            <h4>Bio-Gold Structural Matrix</h4>
+            <p>A bespoke weaving experiment uniting fine metallic filaments with flexible Sorona® bio-polymers. The raised grid matrix captures light across dimensional angles while preserving the tactile softness needed for next-to-skin luxury.</p>
+            <div class="textile-spec-list">
+              <div><span>Yarn Matrix</span><strong>30% Metallic Filament, 70% Sorona® Yarns</strong></div>
+              <div><span>Structure</span><strong>3D Dimensional Jacquard Relief</strong></div>
+              <div><span>Light Index</span><strong>Diffuse Multi-Angle Warm Sheen</strong></div>
+              <div><span>Handfeel</span><strong>Supple Structural Drape</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Palette & Direction -->
+        <div class="editorial-pill-box">
+          <div>
+            <strong>Seasonal Color Direction:</strong> Bio-Gold, Raw Silk &amp; Botanical Midnight
+          </div>
+          <div class="editorial-palette">
+            <span>Palette:</span>
+            <span class="color-chip" style="background:#c2a76f;" title="Bio-Gold"></span>
+            <span class="color-chip" style="background:#dfd5c2;" title="Raw Silk"></span>
+            <span class="color-chip" style="background:#1f221e;" title="Botanical Midnight"></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
     
     <div class="season-detail">
       <div>
@@ -2340,8 +3207,9 @@
       </div>
     </div>
     
-    <div style="margin: 50px 0 80px;">
-      <a class="button" href="#collection" data-home-link>Back to Collections ↗</a>
+    <div style="margin: 50px 0 80px; display: flex; flex-wrap: wrap; gap: 14px;">
+      <a class="button" href="#contact">Inquire About Season Availability ↗</a>
+      <a class="button ghost" href="#collection" data-home-link>Back to Collections ↗</a>
     </div>
   </div>
 </main>
